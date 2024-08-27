@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.5.0)
+project(helloworld VERSION 0.1.0 LANGUAGES C CXX)
+
+set(SOURCES
+    tests/composicion/main.cpp
+    tests/composicion/composicion.cpp
+)
+
+# Define el ejecutable con todos los archivos fuente
+add_executable(APP ${SOURCES})
