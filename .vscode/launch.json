@@ -19,7 +19,8 @@
                     "ignoreFailures": true
                 }
             ],
-            "miDebuggerPath": "/usr/bin/gdb"
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "compilar con build.sh"
         }
     ]
 }
