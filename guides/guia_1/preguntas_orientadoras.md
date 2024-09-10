@@ -133,6 +133,7 @@
      ```
 
    - **Diagrama UML**:
+```plaintext
                         +-----------------------+
                         |      Animal           |
                         +-----------------------+
@@ -150,7 +151,7 @@
 +----------------------+ +----------------------+ +----------------------+
 | + ladrar(): void     | | + maullar(): void    | | + cantar(): void     |
 +----------------------+ +----------------------+ +----------------------+
-
+```
 
 7. **En C, para el manejo de archivos, utilizó `File*`, el cual es un TDA. Investigue al respecto.**
 
