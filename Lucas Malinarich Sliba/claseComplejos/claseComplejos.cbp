@@ -35,6 +35,7 @@
 		<Unit filename="claseComplejos.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="metodosComplejos.cpp" />
+		<Unit filename="metodosPolar.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
