@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1695480996 source:c:\users\jorge\documents\github\complejos\lector_archivos\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
