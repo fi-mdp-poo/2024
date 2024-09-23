@@ -1,13 +1,8 @@
 #include "claseComplejos.h"
 
-//TODO: operadores * y / de la clase Complejos
+//TODO: Revisar el constructor de Polar
 
 int main(){
-    Complejos complejo1(1, 1), complejo2, complejo3;
-    cin>>complejo2;
-    cout<<complejo1;
-    cout<<complejo2;
-    complejo3=complejo1;
-    cout<<complejo3;
+    Polar complejo1;
     return 0;
 }

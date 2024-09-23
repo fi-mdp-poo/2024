@@ -62,23 +62,27 @@ Complejos Complejos::operator-(const Complejos &valor){
 Complejos Complejos::operator*(const Complejos &valor){
     Complejos resultado;
     float real, img;
-    real=0.0;
-    img=0.0;
+    real=getCompReal()*valor.getCompReal()-getCompImaginario()*valor.getCompImaginario();
+    img=getCompReal()*valor.getCompImaginario()+getCompImaginario()*valor.getCompReal();
     resultado.setDatos(real, img);
     return resultado;
 }
 
 Complejos Complejos::operator/(const Complejos &valor){
     Complejos resultado;
-    float real, img;
-    real=0.0;
-    img=0.0;
+    float real, img, denominador;
+    denominador=pow(valor.getCompReal(), 2)+pow(valor.getCompImaginario(), 2);
+    real=getCompReal()*valor.getCompReal()-getCompImaginario()*valor.getCompImaginario();
+    real/=denominador;
+    img=getCompImaginario()*valor.getCompReal()-getCompReal()*valor.getCompImaginario();
+    img/=denominador;
     resultado.setDatos(real, img);
     return resultado;
 }
 
 Complejos& Complejos::operator=(const Complejos &valor){
-    setDatos(valor.getCompReal(), valor.getCompImaginario());
+    if(this!=&valor)
+        setDatos(valor.getCompReal(), valor.getCompImaginario());
     return *this;
 }
 
@@ -104,8 +108,8 @@ Complejos& Complejos::operator/=(const Complejos &valor){
 
 bool Complejos::operator==(const Complejos &valor){
     bool resultado;
-    resultado=(getCompReal()&&valor.getCompReal());
-    resultado=(resultado&&getCompImaginario()&&valor.getCompImaginario());
+    resultado=(getCompReal()==valor.getCompReal());
+    resultado=(resultado&&getCompImaginario()==valor.getCompImaginario());
     return resultado;
 }
 
