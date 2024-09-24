@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1695486420 source:c:\users\jorge\documents\github\complejos\archbinconp\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

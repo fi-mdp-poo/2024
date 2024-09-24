@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1695322233 source:c:\users\jorge\documents\github\complejos\prueba\main.cpp
+	"cReloj.h"
+
+1695322847 c:\users\jorge\documents\github\complejos\prueba\include\creloj.h
+	<cstddef>
+	<string.h>
+	<iostream>
+
+1695322297 source:c:\users\jorge\documents\github\complejos\prueba\src\creloj.cpp
+	"cReloj.h"
+

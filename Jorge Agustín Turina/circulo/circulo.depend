@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1314894556 source:c:\users\turina\documents\progs\test_borrar\circulo\main.cpp
+	<iostream>
+
+1727193854 source:c:\users\turina\documents\progs\test_borrar\circulo\src\circulo.cpp
+	"circulo.h"
+
+1727193855 c:\users\turina\documents\progs\test_borrar\circulo\include\circulo.h
+
+1727194995 source:c:\users\turina\documents\progs\test_borrar\circulo\src\mesa.cpp
+	"Mesa.h"
+
+1727194979 c:\users\turina\documents\progs\test_borrar\circulo\include\mesa.h
+
