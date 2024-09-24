@@ -1,0 +1,27 @@
+Objeto str original: objeto de la clase string
+
+Objeto str modificado: objeto de la clase string concatenado
+
+
+Se obtienen los datos del objeto string:
+Mediante el metodo c_str() = objeto de la clase string concatenado
+Mediante el metodo data()  = objeto de la clase string concatenado
+
+
+Numero entero a texto = 59
+Numero flotante a texto = 378.123
+
+Numero flotante con 5 digitos en total = 378.12 (.precision)
+Numero flotante con 5 digitos decimales = 378.12344 (.setf(ios::fixed))
+
+
+Ajusta el ancho de salida a 10 caracteres y completa con '_'
+1234567890
+________59 alineado a la derecha
+59________ alineado a la izquierda
+objeto de la clase string concatenado (ancho = 10 pero no se trunca)
+
+
+Sumo 2 a numi = 1978
+1976 en hexadecimal es: 0X7B8
+Multiplico por 3 a numf = -6.54E-007
