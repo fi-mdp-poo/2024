@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1727196541 source:c:\facultad\poo\herenciapolar\cpolar.cpp
+	"Cpolar.h"
+	<math.h>
+
+1727194590 c:\facultad\poo\herenciapolar\cpolar.h
+	"complejo.h"
+
+1727196163 source:c:\facultad\poo\herenciapolar\main.cpp
+	<iostream>
+	"complejo.h"
+	"Cpolar.h"
+
+1725371052 c:\facultad\poo\herenciapolar\complejo.h
+	<iostream>
+
