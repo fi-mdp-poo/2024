@@ -1,0 +1,8 @@
+pol1 = 5+6i, 	pol2 = 3/45 grados, 	pol3 = 2.12132+2.12132i
+
+Nueva prueba de salida: 3.1+4.2i
+
+3.1*pol4 = 26.3044/-45 grados
+pol3*5.2 = 27.1448/53.5691 grados
+pol4*pol3 (escalar) = -34.32
+
