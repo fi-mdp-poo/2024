@@ -1,8 +1,8 @@
 #include "Mesa.h"
 
-Mesa::Mesa()
+Mesa::Mesa(int _altura)
 {
-    //ctor
+    altura = _altura;
 }
 
 Mesa::~Mesa()

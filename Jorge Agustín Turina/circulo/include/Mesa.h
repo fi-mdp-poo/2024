@@ -5,12 +5,13 @@
 class Mesa
 {
     public:
-        Mesa();
+        Mesa(int);
         virtual ~Mesa();
 
     protected:
 
     private:
+        int altura;
 };
 
 #endif // MESA_H
