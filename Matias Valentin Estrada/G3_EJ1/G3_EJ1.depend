@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1726844008 source:d:\poo\g3_ej1\main.cpp
+	<iostream>
+	"Complex.h"
+
+1726844057 "
+
+1726843909 d:\poo\g3_ej1\complex.h
+	<iostream>
+
+1726843909 
+
+1726844057 source:d:\poo\g3_ej1\complex.cpp
+	"Complex.h"
+
+1727193128 source:/home/usuario/Documentos/POO/G3_EJ1/Complex.cpp
+	"Complex.h"
+
+1727193659 /home/usuario/Documentos/POO/G3_EJ1/Complex.h
+	<iostream>
+
+1727192830 source:/home/usuario/Documentos/POO/G3_EJ1/main.cpp
+	<iostream>
+	"Complex.h"
+
