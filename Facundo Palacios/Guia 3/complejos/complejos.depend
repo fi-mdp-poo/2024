@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1726844220 source:d:\poo\guia 3\complejos\main.cpp
+	<iostream>
+	"complejos.h"
+
+1726844220 .h"
+
+1726844381 source:d:\poo\guia 3\complejos\src\complejos.cpp
+	"complejos.h"
+	<iostream>
+
+1726843486 
+
+1726843486 d:\poo\guia 3\complejos\include\complejos.h
+	<iostream>
+
+1727194427 source:/media/usuario/KINGSTON/POO/Guia 3/complejos/src/complejos.cpp
+	"complejos.h"
+	<cmath>
+	<iostream>
+
+1727192926 /media/usuario/KINGSTON/POO/Guia 3/complejos/include/complejos.h
+	<iostream>
+
+1727194417 source:/media/usuario/KINGSTON/POO/Guia 3/complejos/main.cpp
+	<iostream>
+	"complejos.h"
+

@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1726064368 source:g:\poo\guia 3\ejercicio5\main.cpp
+	<iostream>
+	"CRacional.h"
+
+1726064210 .h"
+
+1726064356 
+
+1726064356 source:g:\poo\guia 3\ejercicio5\src\cracional.cpp
+	"CRacional.h"
+	<iostream>
+
+1726234906 g:\poo\guia 3\ejercicio5\include\cracional.h
+	<iostream>
+
+1726234946 source:/media/usuario/KINGSTON/POO/Guia 3/ejercicio5/main.cpp
+	<iostream>
+	"CRacional.h"
+	<iostream>
+	"CRacional.h"
+
+1726234906 source:/media/usuario/KINGSTON/POO/Guia 3/ejercicio5/src/CRacional.cpp
+	"CRacional.h"
+	<iostream>
+	"CRacional.h"
+	<iostream>
+
+1726234906 /media/usuario/KINGSTON/POO/Guia 3/ejercicio5/include/CRacional.h
+	<iostream>
+	<iostream>
+
+1726064210 source:c:\users\usuario\desktop\ejercicio5\main.cpp
+	<iostream>
+	"CRacional.h"
+
+1726064188 c:\users\usuario\desktop\ejercicio5\include\cracional.h
+	<iostream>
+
+1726064356 source:c:\users\usuario\desktop\ejercicio5\src\cracional.cpp
+	"CRacional.h"
+	<iostream>
+
+1726234946 source:d:\poo\guia 3\ejercicio5\main.cpp
+	<iostream>
+	"CRacional.h"
+
+1726234906 d:\poo\guia 3\ejercicio5\include\cracional.h
+	<iostream>
+
+1726234906 source:d:\poo\guia 3\ejercicio5\src\cracional.cpp
+	"CRacional.h"
+	<iostream>
+
