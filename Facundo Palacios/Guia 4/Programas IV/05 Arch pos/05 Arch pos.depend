@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475080511 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 2\programas\05 arch pos\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+

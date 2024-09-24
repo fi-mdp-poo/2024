@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1727196247 source:/media/usuario/KINGSTON/POO/Guia 4/polares/main.cpp
+	<iostream>
+	"polar.h"
+
+1727199820 /media/usuario/KINGSTON/POO/Guia 4/polares/include/polar.h
+	"../complejos.h"
+
+1727192926 /media/usuario/KINGSTON/POO/Guia 4/polares/complejos.h
+	<iostream>
+
+1727199138 source:/media/usuario/KINGSTON/POO/Guia 4/polares/src/polar.cpp
+	"polar.h"
+	"../complejos.h"
+	<iostream>
+	<cmath>
+
