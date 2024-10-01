@@ -1,0 +1,6 @@
+->cualquier clase con un metodo vitual se la llama clase polimorfica
+->internamente se crea una tabla con los punteros a los metodos virtuales
+->vitual void makeSound() = 0 METODO VIRTUAL PURO CLASE ABSTRACTA NO SE PUEDEN CREAR OBJETOS DE ESAS CLASES
+
+
+no necesito reescribir las funciones virtual en sus clases derivadas
