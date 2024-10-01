@@ -1,0 +1,84 @@
+1) Especificar la clase base desde la cual se quiere llamar al método:
+int main()
+{
+    ClaseC CC;
+
+    cout<<CC.ClaseA::LeerValor()<<endl;
+
+    return 0;
+}
+
+2) Renombrar el método en una de las clases
+class ClaseB{
+public:
+    ClaseB() : valorB(20){}
+    int ObtenerValor() const
+    {
+        return valorB;
+    }
+protected:
+    int valorB;
+};
+
+3)Utilizar una función virtual en las clases base y hacerla override en la clase derivada
+
+class ClaseA{
+public:
+    ClaseA() : valorA(10) {}
+    virtual int LeerValor() const // Función virtual
+    {
+        return valorA;
+    }
+protected:
+    int valorA;
+};
+
+class ClaseB{
+public:
+    ClaseB() : valorB(20) {}
+    virtual int LeerValor() const // Función virtual
+    {
+        return valorB;
+    }
+protected:
+    int valorB;
+};
+
+class ClaseC : public ClaseA, public ClaseB {
+public:
+    int LeerValor() const override // Sobreescribimos para eliminar ambigüedad
+    {
+        return ClaseA::LeerValor(); // O elegir entre ClaseA::LeerValor() o ClaseB::LeerValor()
+    }
+};
+
+4) Herencia virtual
+class ClaseA {
+public:
+    ClaseA() : valorA(10) {}
+    int LeerValor() const
+    {
+        return valorA;
+    }
+protected:
+    int valorA;
+};
+
+class ClaseB : public virtual ClaseA {  // Herencia virtual
+public:
+    ClaseB() : valorB(20) {}
+    int ObtenerValor() const  // Método diferente para evitar ambigüedad
+    {
+        return valorB;
+    }
+protected:
+    int valorB;
+};
+
+class ClaseC : public virtual ClaseA, public ClaseB {
+    // ClaseC hereda virtualmente de ClaseA también para resolver ambigüedad
+};
+
+CHAT dice:
+Conclusión:
+Cualquiera de estas soluciones corrige el error, y depende del diseño que prefieras para tu programa. La primera es la más sencilla, mientras que la tercera ofrece una solución más flexible si planeas usar polimorfismo.

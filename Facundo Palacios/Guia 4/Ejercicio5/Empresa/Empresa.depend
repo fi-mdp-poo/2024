@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1727744952 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\main.cpp
+	<iostream>
+	"PlantaPermanente.h"
+	"PlantaTemporaria.h"
+	"Gerente.h"
+
+1727745664 "
+
+1727743980 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\src\empleado.cpp
+	"Empleado.h"
+	<string>
+
+1727744825 
+
+1727744825 c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\include\empleado.h
+	<string>
+
+1727743980 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\src\plantapermanente.cpp
+	"PlantaPermanente.h"
+
+1727744496 manente.h"
+
+1727743934 c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\include\plantapermanente.h
+	"Empleado.h"
+
+1727745400 h"
+
+1727743935 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\src\plantatemporaria.cpp
+	"PlantaTemporaria.h"
+
+1727743935 poraria.h"
+
+1727743935 c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\include\plantatemporaria.h
+	"Empleado.h"
+
+1727744487 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\src\gerente.cpp
+	"Gerente.h"
+
+1727744496 c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\include\gerente.h
+	"PlantaPermanente.h"
+
+1727745664 source:c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\src\empresa.cpp
+	"Empresa.h"
+
+1727745400 c:\users\usuario\desktop\poo\guia 4\ejercicio5\empresa\include\empresa.h
+	<vector>
+	"Empleado.h"
+
+1727743980 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/src/Empleado.cpp
+	"Empleado.h"
+	<string>
+
+1727797263 /media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/include/Empleado.h
+	<string>
+
+1727803620 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/src/Empresa.cpp
+	"Empresa.h"
+
+1727745400 /media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/include/Empresa.h
+	<vector>
+	"Empleado.h"
+
+1727744487 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/src/Gerente.cpp
+	"Gerente.h"
+
+1727744496 /media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/include/Gerente.h
+	"PlantaPermanente.h"
+
+1727797337 /media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/include/PlantaPermanente.h
+	"Empleado.h"
+
+1727743980 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/src/PlantaPermanente.cpp
+	"PlantaPermanente.h"
+
+1727743935 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/src/PlantaTemporaria.cpp
+	"PlantaTemporaria.h"
+
+1727743935 /media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/include/PlantaTemporaria.h
+	"Empleado.h"
+
+1727803923 source:/media/usuario/KINGSTON/POO/Guia 4/Ejercicio5/Empresa/main.cpp
+	<iostream>
+	"Empresa.h"
+	"PlantaPermanente.h"
+	"PlantaTemporaria.h"
+	"Gerente.h"
+

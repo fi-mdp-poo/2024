@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1727444953 source:c:\users\usuario\desktop\poo\guia 4\mesaredonda\main.cpp
+	<iostream>
+	"MesaRedonda.h"
+
+1727444122 source:c:\users\usuario\desktop\poo\guia 4\mesaredonda\src\mesa.cpp
+	"mesa.h"
+	<iostream>
+
+1727444122 c:\users\usuario\desktop\poo\guia 4\mesaredonda\include\mesa.h
+
+1727444971 source:c:\users\usuario\desktop\poo\guia 4\mesaredonda\src\mesaredonda.cpp
+	"MesaRedonda.h"
+	<iostream>
+
+1727444656 c:\users\usuario\desktop\poo\guia 4\mesaredonda\include\mesaredonda.h
+	"mesa.h"
+	"circulo.h"
+	<iostream>
+
+1727444122 c:\users\usuario\desktop\poo\guia 4\mesaredonda\include\circulo.h
+
+1727444122 source:c:\users\usuario\desktop\poo\guia 4\mesaredonda\src\circulo.cpp
+	"circulo.h"
+	<iostream>
+
