@@ -2,18 +2,19 @@
 
 istream& operator>>(istream &Cin, Polar &valor){
     float num;
-    cout<<"Módulo del complejo: ";
+    cout<<"|z|: ";
     cin>>num;
     valor.setModulo(num);
-    cout<<"\nFase del complejo: ";
+    cout<<"\nAlfa: ";
     cin>>num;
     valor.setFase(num);
     return Cin;
 }
 
-//ostream& operator<<(ostream &Cout, Polar &valor){
-//    return Cout;
-//}
+ostream& operator<<(ostream &Cout, Polar &valor){
+    cout<<"|z|="<<valor.getModulo()<<", alfa="<<valor.getFase()<<endl;
+    return Cout;
+}
 
 Complejos RecTan(float mod, float fas){
     float real, img;
@@ -23,7 +24,7 @@ Complejos RecTan(float mod, float fas){
     return resultado;
 }
 
-Polar::Polar(float mod, float fas){
+Polar::Polar(float mod, float fas) : Complejos(mod*cos(fas), mod*sin(fas)){
     setModulo(mod);
     setFase(fas);
 }
@@ -31,10 +32,15 @@ Polar::Polar(float mod, float fas){
 Polar::~Polar(){ }
 
 void Polar::setModulo(float mod){
-    modulo=mod;
+    modulo=abs(mod);
 }
-void Polar::setFase(float fas){ //¿Qué pasa cuándo se pasa un ángulo >2PI?
+void Polar::setFase(float fas){
     fase=fas;
+    if(abs(fase)>2*PI){
+        while(abs(fase)>2*PI)
+            fase/=(2*PI);
+    }
+
 }
 
 float Polar::getModulo()const{ return modulo; }

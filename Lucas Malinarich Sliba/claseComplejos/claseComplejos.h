@@ -3,6 +3,7 @@
 
 #include <cmath>
 #include <iostream>
+#define PI 3.141592
 
 using namespace std;
 
@@ -41,7 +42,7 @@ public:
     friend istream& operator>>(istream&, Polar&);
     friend ostream& operator<<(ostream&, Polar&);
     friend Complejos RecTan(float mod, float fas);
-    //Calcula los componentes del plano complejo
+    //Pasa los datos de la notación polar a la binaria
     Polar(float modulo=0, float fase=0);
     virtual ~Polar();
     void setModulo(float);
@@ -54,8 +55,8 @@ public:
     //Obtiene la fase del complejo pasado
     Polar& operator=(const Polar&);
     Polar& operator=(const Complejos&);
-    //El comportamiento heredaro no resulta muy útil ahora mismo
-    //Los operadores a sobrecargar ahora tienen que realizar otras instrucciones a las de la clase base
+    //La sobrecarga de los operadores * y / serían más eficientes si se usa la notacin polar
+    //Los operadores aritmticos no actualizan los valores de la notación polar
 private:
     float modulo, fase;
 };
