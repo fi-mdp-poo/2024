@@ -4,3 +4,12 @@
 
 
 no necesito reescribir las funciones virtual en sus clases derivadas
+
+el constructor no puede ser virtual
+
+
+Viernes 
+como se produce en binding dinamico 
+porq un constructor no son virtuales y porq los destructures si 
+porq no usar destructures no virtuales 
+ventaja de usar auto& y no usar empleado *
