@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1724980217 source:c:\users\usuario\desktop\poo\guia 2 posta\ejercicio1\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Empleado.h"
+
+1724974419 source:c:\users\usuario\desktop\poo\guia 2 posta\ejercicio1\fecha.cpp
+	<iostream>
+	"Fecha.h"
+
+1724979743 c:\users\usuario\desktop\poo\guia 2 posta\ejercicio1\include\fecha.h
+	<iostream>
+
+1724980079 source:c:\users\usuario\desktop\poo\guia 2 posta\ejercicio1\src\empleado.cpp
+	"Empleado.h"
+	<iostream>
+	<cstring>
+
+1724979906 c:\users\usuario\desktop\poo\guia 2 posta\ejercicio1\include\empleado.h
+	"Fecha.h"
+	<string>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1724975575 source:c:\users\usuario\desktop\poo\guia 2 posta\ejercicio4\main.cpp
+	<iostream>
+	"Tiempo.h"
+
+1724975669 source:c:\users\usuario\desktop\poo\guia 2 posta\ejercicio4\src\tiempo.cpp
+	<iostream>
+	<iomanip>
+	"Tiempo.h"
+
+1724975669 c:\users\usuario\desktop\poo\guia 2 posta\ejercicio4\include\tiempo.h
+
