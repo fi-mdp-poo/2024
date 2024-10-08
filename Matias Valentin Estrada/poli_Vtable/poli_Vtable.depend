@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1728353905 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\ayed\unidad 6\poli_vtable\main.cpp
+	<iostream>
+	"myClass.h"
+
+1728354127 c:\users\estra_o3lm7ip\onedrive\escritorio\matias\ayed\unidad 6\poli_vtable\myclass.h
+	<iostream>
+
