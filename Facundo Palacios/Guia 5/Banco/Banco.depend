@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1728408055 source:f:\poo\guia 5\banco\main.cpp
+	<iostream>
+
+1728432758 source:f:\poo\guia 5\banco\src\cuentabancaria.cpp
+	"CuentaBancaria.h"
+
+1728431434 f:\poo\guia 5\banco\include\cuentabancaria.h
+	<string>
+	<iostream>
+
+1728431605 source:f:\poo\guia 5\banco\src\cuentacorriente.cpp
+	"CuentaCorriente.h"
+
+1728431447 f:\poo\guia 5\banco\include\cuentacorriente.h
+	"CuentaBancaria.h"
+
+1728432758 source:f:\poo\guia 5\banco\src\cajaahorro.cpp
+	"CajaAhorro.h"
+
+1728431676 f:\poo\guia 5\banco\include\cajaahorro.h
+	"CuentaBancaria.h"
+
+1728433019 source:f:\poo\guia 5\banco\src\cuentauniversitaria.cpp
+	"CuentaUniversitaria.h"
+
+1728432907 f:\poo\guia 5\banco\include\cuentauniversitaria.h
+	"CajaAhorro.h"
+

@@ -1,0 +1,66 @@
+Nombre = Pablo Marmol
+Documento = 27879654
+Fecha nacimiento = 29/1/1959
+Carrera = Ing. Electronica
+Fecha ingreso = 1/3/2014
+Cantidad de materias aprobadas = 6
+Promedio = 7.8
+
+
+Nombre = Betty McBricker
+Documento = 17555444
+Fecha nacimiento = 1/1/1987
+Carrera = Ing. Mecanica
+Fecha ingreso = 1/3/2010
+Cantidad de materias aprobadas = 10
+Promedio = 6.5
+
+
+Nombre = Roberto Hidalgo
+Documento = 17123456
+Fecha nacimiento = 29/1/1979
+Categoria = Titular
+Fecha ingreso = 1/5/1995
+Sueldo = 75324.9
+
+
+Nombre = Pedro
+Documento = 12345678
+Fecha nacimiento = 12/10/2021
+Categoria = 
+Fecha ingreso = 12/10/2021
+Sueldo = 0.00322403
+
+
+Nombre = Pedro
+Documento = 12345678
+Fecha Nacimiento = 12/10/2021
+Categoria = Becario
+Fecha Ingreso = 1/4/2016
+Sueldo = 2345.67
+Carrera = Computacion
+Fecha Ingreso = 1/4/2014
+Cantidad de materias = 15
+Promedio = 8.59
+Tipo de beca = Estudiante avanzado
+Duracion = 3
+Lugar trabajo = LIVRA
+Nombre director = Juan Carlos
+
+
+Nombre = Pedro
+Documento = 12345678
+Fecha Nacimiento = 12/10/2021
+Categoria = 
+Fecha Ingreso = 12/10/2021
+Sueldo = 1.03234e-38
+Carrera =  
+Fecha Ingreso = 1/1/1900
+Cantidad de materias = 0
+Promedio = 0
+Tipo de beca = 
+Duracion = 1297350768
+Lugar trabajo = 
+Nombre director = 
+
+

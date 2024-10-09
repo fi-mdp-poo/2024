@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1603846364 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\becario.cpp
+	"becario.h"
+
+1603846024 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\becario.h
+	"empleado.h"
+	"estudiante.h"
+
+1603846024 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\empleado.h
+	"persona.h"
+
+1604359173 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\persona.h
+	<iostream>
+
+1603846024 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\estudiante.h
+	"persona.h"
+
+1603846364 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\empleado.cpp
+	"empleado.h"
+
+1603846372 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\estudiante.cpp
+	"estudiante.h"
+
+1603664281 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\main.cpp
+	"estudiante.h"
+	"empleado.h"
+	"becario.h"
+	<fstream>
+
+1604359122 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 5\programas\04 becario\persona.cpp
+	"persona.h"
+	<ctime>
+
+1634064925 source:c:\users\roberto\documents\poo\programas\04 becario\becario.cpp
+	"becario.h"
+
+1634063848 c:\users\roberto\documents\poo\programas\04 becario\becario.h
+	"empleado.h"
+	"estudiante.h"
+
+1603846024 c:\users\roberto\documents\poo\programas\04 becario\empleado.h
+	"persona.h"
+
+1634063873 c:\users\roberto\documents\poo\programas\04 becario\persona.h
+	<iostream>
+
+1603846024 c:\users\roberto\documents\poo\programas\04 becario\estudiante.h
+	"persona.h"
+
+1634064654 source:c:\users\roberto\documents\poo\programas\04 becario\empleado.cpp
+	"empleado.h"
+
+1634064654 source:c:\users\roberto\documents\poo\programas\04 becario\estudiante.cpp
+	"estudiante.h"
+
+1634047620 source:c:\users\roberto\documents\poo\programas\04 becario\main.cpp
+	"estudiante.h"
+	"empleado.h"
+	"becario.h"
+	<fstream>
+
+1634064381 source:c:\users\roberto\documents\poo\programas\04 becario\persona.cpp
+	"persona.h"
+	<ctime>
+
