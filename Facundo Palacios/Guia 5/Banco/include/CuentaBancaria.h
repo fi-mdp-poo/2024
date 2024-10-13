@@ -16,7 +16,7 @@ class CuentaBancaria
         float Getsaldo() const { return saldo; }
         void Setsaldo(float val) { saldo = val; }
 
-        virtual void extraer()const=0;
+        virtual void extraer()=0;
         void depositar(float cantidad);
 
     protected:

@@ -11,6 +11,8 @@ class CuentaCorriente : public CuentaBancaria
 
         float Gettope() { return tope; }
         void Settope(float val) { tope = val; }
+        float Getuso() { return uso; }
+        void Setuso(float val) { uso = val; }
 
         void extraer();
 
@@ -18,6 +20,7 @@ class CuentaCorriente : public CuentaBancaria
 
     private:
         float tope;
+        float uso;
 };
 
 #endif // CUENTACORRIENTE_H

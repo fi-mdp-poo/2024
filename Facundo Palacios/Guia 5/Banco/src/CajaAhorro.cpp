@@ -5,6 +5,7 @@ CajaAhorro::CajaAhorro(string nombre, float saldo, int extracciones):
 {
     Setextracciones(extracciones);
     Setrealizadas(0);
+    mes=0;
 }
 
 CajaAhorro::~CajaAhorro()
@@ -14,13 +15,25 @@ CajaAhorro::~CajaAhorro()
 
 void CajaAhorro::extraer()
 {
+    int mes_ult=mes;
+    int mes_act=0;
+    cout<<"Ingrese el mes actual: ";
+    cin>>mes_act;
+    cout<<endl;
+    if(mes_act!=mes_ult)
+    {
+        Setrealizadas(0);
+        Setmes(mes_act);
+    }
     if(Getsaldo()>0 && Getrealizadas()<Getextracciones())
     {
         float actual=Getsaldo();
+
         float retirar=0.0;
         cout<<"Su saldo disponible es: $"<<actual<<endl;
         cout<<"Ingrese cantidad a retirar: $";
         cin>>retirar;
+        cout<<endl;
         actual-=retirar;
         if(actual>=0)
         {

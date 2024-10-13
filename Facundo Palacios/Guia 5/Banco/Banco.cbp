@@ -34,11 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Banco.h" />
 		<Unit filename="include/CajaAhorro.h" />
 		<Unit filename="include/CuentaBancaria.h" />
 		<Unit filename="include/CuentaCorriente.h" />
 		<Unit filename="include/CuentaUniversitaria.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Banco.cpp" />
 		<Unit filename="src/CajaAhorro.cpp" />
 		<Unit filename="src/CuentaBancaria.cpp" />
 		<Unit filename="src/CuentaCorriente.cpp" />

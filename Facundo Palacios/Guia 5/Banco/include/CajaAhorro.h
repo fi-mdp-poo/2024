@@ -13,6 +13,8 @@ class CajaAhorro : public CuentaBancaria
         void Setextracciones(int val) { extracciones = val; }
         int Getrealizadas() { return realizadas; }
         void Setrealizadas(int val) { realizadas = val; }
+        int Getmes() { return mes; }
+        void Setmes(int val) { mes = val; }
 
         void extraer();
 
@@ -22,6 +24,7 @@ class CajaAhorro : public CuentaBancaria
     private:
         int extracciones;
         int realizadas;
+        int mes;
 };
 
 #endif // CAJAAHORRO_H
