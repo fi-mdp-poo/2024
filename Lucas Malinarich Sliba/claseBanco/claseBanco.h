@@ -12,7 +12,7 @@ public:
     ~Banco();
     void crearCuenta();
     Cuenta* eliminarCuenta();
-    //int getIndiceCuenta(string titular);
+    //Cuenta* getCuenta(string titular);
     double calcularActivo();
 };
 
