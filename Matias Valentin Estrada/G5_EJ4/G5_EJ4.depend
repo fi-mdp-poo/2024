@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1729227340 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\main.cpp
+	<iostream>
+	"contribuyente.h"
+	"factura.h"
+	"recibo.h"
+	"calculador.h"
+
+1729225076 c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\contribuyente.h
+	<string>
+	<vector>
+	"factura.h"
+
+1729223924 c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\factura.h
+	<iostream>
+	<string>
+
+1729226256 c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\recibo.h
+	<iostream>
+	<string>
+
+1729227135 c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\calculador.h
+	"contribuyente.h"
+	"recibo.h"
+
+1729223858 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\factura.cpp
+	"factura.h"
+
+1729225147 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\contribuyente.cpp
+	"contribuyente.h"
+
+1729225331 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\calculador.cpp
+	"calculador.h"
+
+1729226468 source:c:\users\estra_o3lm7ip\onedrive\escritorio\matias\g5_ej4\recibo.cpp
+	"recibo.h"
+
