@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\main.cpp
+	<iostream>
+
+1729211690 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\factura.cpp
+	"Factura.h"
+
+1729211972 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\factura.h
+	<string>
+	<iostream>
+
+1729215247 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\recibodepago.cpp
+	"RecibodePago.h"
+
+1729215247 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\recibodepago.h
+	"Factura.h"
+	<string>
+	<iostream>
+
+1729213825 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\calculadorimpositivo.cpp
+	"CalculadorImpositivo.h"
+
+1729216386 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\calculadorimpositivo.h
+	"RecibodePago.h"
+	"Factura.h"
+	<vector>
+	<string>
+	<iostream>
+
+1729215858 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\completo.cpp
+	"Completo.h"
+
+1729214818 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\completo.h
+	"CalculadorImpositivo.h"
+
+1729215900 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\extendidos.cpp
+	"Extendidos.h"
+
+1729214818 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\extendidos.h
+	"CalculadorImpositivo.h"
+
+1729215656 source:c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\src\limitado.cpp
+	"Limitado.h"
+	"Factura.h"
+
+1729214818 c:\users\usuario\desktop\poo\guia 5\calculadorimpositivo\include\limitado.h
+	"CalculadorImpositivo.h"
+
