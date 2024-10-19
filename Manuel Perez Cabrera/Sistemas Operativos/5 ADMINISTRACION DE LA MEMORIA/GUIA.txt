@@ -1,0 +1,342 @@
+GUIA ADMINISTRACION DE LA MEMORIA (MEMORIA CONVENCIONAL)
+
+
+1. ¿Qué entiende por manejo de memoria? ¿Por qué surge la necesidad de una política de manejo?
+
+El manejo de memoria es el proceso mediante el cual un sistema operativo administra los recursos de memoria de una computadora para garantizar que los programas en ejecución tengan el acceso adecuado a la memoria necesaria.
+Necesitamos gestionarla para hacer un uso eficiente de ella (que no haya memoria ociosa) y alojar la mayor cantidad de procesos posibles (Grado de multiprogramación).Eso mejora potencialmente el % de Uso Efectivo del Procesador.
+
+
+
+2. ¿Qué ventajas ofrece el monitor residente vs. el manejo de memoria desnuda?
+
+MAQUINA DESNUDA 
+
+✓ En los principios de la computación (hasta 1960), no había sistemas operativos. La memoria era una sábana de celdas contiguas sin division física ni lógica.
+
+✓ No había soporte para la gestion de la memoria. El proceso debía controlar los dispositivos.
+
+✓ El programador, administrador y usuario eran la misma persona y era quien administraba la memoria.
+
+MONITOR RESIDENDE
+
+✓ El Monitor Residente fue el primer esquemade un “gestor de acciones y recursos”. Seencargaba del secuenciamiento de tareas, la gestion de los dispositivos y algunas rutinas que eran de uso recurrente.
+
+✓ Fue necesario “dividir” la memoria para evitarque el proceso de usuario no escribiera sobre el monitor residente: surge la cuestión de la protección y el Registro FENCE.
+
+
+
+
+3. ¿Qué es el swapping y para qué sirve el swapping sobrelapado?
+
+El SWAPPING es una técnica de administración de memoria utilizada por los sistemas operativos para gestionar eficientemente el uso de la memoria principal (RAM).consiste en llevar cada proceso completo a memoria, ejecutarlo durante cierto tiempo y después regresarlo al disco.
+
+SWAPPING SUPERPUESTO
+
+✓ Se divide la memoria en 3 regiones iguales
+
+✓ Mientras en una región está el proceso que se está ejecutando, en otra región está el proceso terminado (que se está descargando) y en la tercera región está el proceso nuevo (que se está cargando).
+
+✓ Siempre hay solamente un proceso en ejecución (y los registros fences marcan sus fronteras).
+
+✓ Hay multiprogramación, pero monotarea. 
+
+
+
+
+
+4. ¿Qué ventajas ofrece la multiprogramación sobre la monoprogramación?
+
+    ✓ Mejor utilización del procesador: Mientras un proceso espera (por ejemplo, por I/O), otros pueden ejecutarse.
+
+    ✓ Mayor productividad: Varios procesos pueden avanzar simultáneamente, optimizando el uso de recursos.
+
+    ✓ Reducción de tiempos muertos: El procesador no queda inactivo mientras espera a que un proceso termine su tarea.
+
+    ✓ Mayor rendimiento general: Mejora la capacidad del sistema para atender múltiples tareas a la vez.
+
+    ✓ Uso eficiente de la memoria: Permite gestionar la memoria para evitar que esté ociosa, maximizando su aprovechamiento.
+
+    ✓ Mayor grado de multiprogramación: Se pueden alojar más procesos en la memoria al mismo tiempo, mejorando la concurrencia del sistema.
+
+
+
+
+
+5. ¿Qué es MFT y MVT? ¿Cómo funcionan?
+
+MULTIPLES PARTICIONES DE TAMAÑO FIJO (MFT)
+
+    ✓ Se divide la memoria en particiones o regiones de igual tamaño (fijo) que alojan diferentes procesos en ejecución (aparece la multitarea).
+
+    ✓ En cualquier partición libre puede cargarse cualquier proceso cuyo tamaño sea menor o igual que el tamaño de la partición.
+
+    ✓ El uso de la memoria es ineficiente. Cualquier programa, sin importar lo pequeño que sea, ocupará una partición completa, generando fragmentación interna. 
+
+    ✓ El tamaño máximo del proceso es el tamaño de la partición.
+
+    ✓ Las particiones pueden ser todas iguales o diferentes entre sí.
+
+    ✓ Si son todas iguales, con una sola cola es suficiente.
+    
+    ✓ Si las particiones son diferentes, conviene implementar múltiples colas para que cada proceso compita por la región en la que mejor ajusta (menos FI) y mayor tamaño máximo.
+
+MULTIPLES PARTICIONES DE TAMAÑO VARIABLE (MVT)
+    ✓ Se divide la memoria en particiones variables en número y longitud.
+    
+    ✓ Al proceso se le asigna exactamente tanta memoria como necesite.
+
+    ✓ Con el uso, se van produciendo varios huecos en la memoria (Fragmentación Externa).
+    
+    ✓ Se debe usar la Compactación para desplazar los procesos para que estén contiguos, de forma tal que toda la memoria libre quede junta en un solo bloque. Desventaja para RTOS.  
+
+
+
+
+6. Explique las distintas alternativas para asignar las tareas a las regiones en MFT y en MVT. VERRRRRRRRRRRRRRRRRRRRRRRRRR
+??????????????????????????????????????????????????????????????????????????????????
+MVT
+✓ Se divide la memoria en particiones variables en número y longitud.
+✓ Al proceso se le asigna exactamente tanta memoria como necesite.
+✓ Con el uso, se van produciendo varios huecos en la memoria (Fragmentación Externa).
+✓ Se debe usar la Compactación para desplazar
+los procesos para que estén contiguos, de forma
+tal que toda la memoria libre quede junta en un
+solo bloque. Desventaja para RTOS.
+
+
+
+
+
+7. ¿Qué es Paginación Pura y Segmentación Pura? ¿Cómo funcionan? Explique ventajas y desventajas.
+
+PAGINACION
+    ✓ Se rompe el principio de continuidad en MFT !
+
+    ✓ La memoria principal se encuentra dividida en trozos iguales de tamaño fijo (Marco/Frame) y cada proceso en pequeños trozos de tamaño fijo (Página/Page).
+
+    ✓ El sistema operativo mantiene una tabla de páginas para cada proceso:
+        – Muestra la posición del marco de cada página del proceso.
+        – La dirección de la memoria consta de un número de página y de un desplazamiento dentro de la página.
+    
+    ✓ Todos los frames libres se pueden ocupar: no hay Fragmentación Externa.
+
+    ✓ Siempre hay Fragmentación Interna en el ultimoframe de cada proceso (en promedio medioframe). La FI Total será: Tamaño del Frame * N * 0,5
+
+    ✓ Cuanto más grande sea el tamaño del Frame,habrá mayor FI.
+
+    ✓ El tamaño máximo del proceso que se puedecorrer es equivalente a toda la memoria física.
+
+    ✓ El N máximo es la cantidad de frames.
+
+TABLA DE PAGINAS 
+    ✓ Cada proceso tiene su propia tabla de páginas en su PCB. Es un arreglo de tipo integer, donde cada elemento guarda el frame correspondiente a la entrada.
+    
+    ✓ El SO tiene una en el contexto de operación del proceso donde se mapea la tabla de páginas del proceso current, en tiempo de context switch, para mayor perfomance.
+
+TABLA DE PAGINAS DEL SO (HW)
+✓ Es de acceso rápido.
+
+✓ Tiene una cantidad finita de entradas que se setean en el Context Switch (IN) con la tabla de páginas del proceso que se carga en el procesador
+.– Cuando el proceso tiene menos páginas que las entradas de esta TP, se deben marcar la entradas inválidas
+.– Cuando el proceso tiene mas páginas que las entradas de esta TP, se mantiene una parte de la tabla en memoria (rebalse) y se incrementa el tiempo de acceso efectivo a memoria
+
+
+
+SEGMENTACION
+    ✓ Se rompe el principio de continuidad en MVT !
+
+    ✓ La memoria principal se la considera unasábana sin divisiones preestablecidas.
+
+    ✓ Los procesos son divididos en “segmentos”según un criterio de unidad lógica, cada unocon su tamaño (existe una longitude máximade segmento).
+
+    ✓ Los segmentos se van asignando en memoriaen los huecos libres que haya, dispersos entresi.
+
+    ✓ El esquema de administración de memoria esmas cercano a la vista de memoria delusuario
+
+    ✓ Un programa es una colección de segmentos:
+        – Programa principal, Procedimiento, Función,Librería, Método, Objeto, Variables locales,Variables globales, Bloque común, Pila, Tabla desímbolos, Matrices, etc.
+
+    ✓ No hay Fragmentación Interna en los segmentos.
+
+    ✓ Todos los huecos libres se pueden ocupar: hayFragmentación Externa.
+
+    ✓ Se puede generar un solo hueco si se recurre a laCompactación
+
+    ✓ La Compactación es menos probable que en MVT (es más fácil cargar un proceso dividido envarios segmentos que en un solo bloquecontiguo)
+
+TABLA DE SEGMENTOS
+    ✓ Cada proceso tiene su propia tabla de segmentos en su PCB. Es un arreglo con dos campos (base, límite), donde  cada elemento guarda la dirección base del segmento y u tamaño para cada entrada. Es mas “cara” que la Tabla de páginas (por su tamaño).
+
+    ✓ El SO tiene una en el contexto de operación del proceso donde se mapea la tabla de segmentos del proceso current, en tiempo de context switch, para mayor perfomance.
+
+    ✓ Todas las consideraciones hechas para Paginación son válidas para Segmentación en cuanto a la administración de la Tabla de segmentos del SO, bits de validez, rebalse, etc.
+
+
+
+
+
+
+
+
+
+
+
+8. ¿Qué indicadores se utilizan para comparar las diferentes técnicas de administración de memoria?
+Realice un cuadro comparativo que muestre que sucede con los indicadores para cada técnica
+
+            Tasa de Fallos de página                Fragmentación
+            
+            
+
+            CHATGPT
+Uso de Memoria: Se refiere a la eficiencia con la que se utiliza la memoria disponible.
+Fragmentación: Mide el desperdicio de memoria, que puede ser interna (espacio no utilizado dentro de un bloque) o externa (espacios libres que no se pueden utilizar).
+Tiempo de Acceso: Tiempo que tarda el sistema en acceder a la memoria, importante para la rapidez del sistema.
+Complejidad de Implementación: Dificultad para implementar y gestionar la técnica.
+Eficiencia de la Asignación: Se refiere a cuán bien se asigna y utiliza la memoria entre los procesos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9. Defina fragmentación externa e interna.
+
+Llamamos Fragmentación a la cantidad de memoria ociosa (no utilizada efectivamente), esté disponible o no.
+    ✓ Si esa memoria no utilizada está asignada a un proceso, entonces solo él puede usarla. 
+    Si no la usa: Fragmentación Interna.
+    ✓ Si esa memoria no utilizada no está asignada a ningún proceso, entonces está disponible para
+    su uso: Fragmentación Externa
+
+
+
+
+
+
+10. Defina “compactación de memoria”. Indique quién la realiza y que características propias hacen de
+ella una desventaja en los sistemas de tiempo real.
+
+(INICIO CHATGPT)
+La compactación de memoria es un proceso en el que se reorganizan los bloques de memoria ocupada 
+para eliminar la fragmentación externa. Su objetivo es crear un espacio contiguo de memoria libre suficiente 
+para satisfacer las solicitudes de nuevos procesos o para mejorar el rendimiento del sistema. 
+Durante este proceso, se mueven los datos de un área de memoria a otra, y los punteros a esos datos 
+deben actualizarse para reflejar su nueva ubicación.
+La realiza el SO. Puede ser programada para ejecutarse en momentos específicos (como durante 
+la inactividad del sistema) o puede ser desencadenada por ciertas condiciones, como la falta de espacio 
+de memoria.
+La compactación puede consumir CPU y otros recursos del sistema que podrían ser necesarios para tareas 
+en tiempo real
+(FIN CHATGPT)
+
+(INICIO TNENDWON)
+Cuando el intercambio crea varios huecos en la memoria, es posible combinarlos todos en uno
+grande desplazando los procesos lo más hacia abajo que sea posible. Esta técnica se conoce como
+compactación de memoria (FIN TNENDWON)
+
+
+
+
+
+
+11. ¿Cuál es la finalidad de utilizar una tabla de páginas? ¿Cómo se resuelve una dirección física a partir
+de una dirección lógica? VERRRRRRRRRRRRRRRRRRRRRRRRRRRR
+
+La tabla de páginas se utiliza para traducir direcciones lógicas (virtuales) a direcciones físicas en 
+la memoria RAM. Esto es necesario porque los procesos usan direcciones virtuales, y el sistema operativo
+ debe mapearlas a ubicaciones físicas específicas.
+
+Resolución de dirección física:
+División de la dirección lógica: Se separa en número de página (parte más significativa) y desplazamiento 
+(parte menos significativa).
+Consulta a la tabla de páginas: Se usa el número de página para encontrar la dirección base de la 
+página física.
+Cálculo de la dirección física: Se suma el desplazamiento a la dirección base para obtener la dirección 
+física final.
+Este proceso permite la gestión eficiente y segura de la memoria en un sistema operativo.
+
+
+
+
+
+12. Esquematice el mecanismo de traducción de una dirección lógica a una dirección física en:
+I. Sistema de Paginación de 1 nivel
+II. Sistema de Paginación de 2 niveles
+III. Sistema de Segmentación Pura
+IV. Sistema de Segmentación/Paginación
+
+13. Dados los siguientes datos:
+Proceso Tiempo de CPU Tiempo de Arribo Tamaño (UM)
+P1 17 1 2
+P2 2 2 4
+P3 9 3 3
+P4 23 4 4
+P5 5 5 5
+P6 16 6 6
+P7 4 7 3
+
+Calcular el tiempo turnaround y tiempo de espera promedio aplicando los siguientes algoritmos de
+scheduling:
+a. First Come First Served (FCFS)
+b. Shortest Job First (SJF) con y sin desalojo
+c. Round Robin (RR) con quantum de 2 unidades de tiempo.
+Datos:
+La asignación de los procesos en memoria se realizará según un esquema MFT, disponiendo de
+15 unidades de memoria contigua en total, en 3 regiones de 3, 5 y 7 unidades cada una y un
+planteo Best Fit Only de asignación (3 colas).
+La asignación de los procesos en memoria según un esquema MVT, disponiendo de 10
+unidades de memoria contigua en total y un planteo First Fit de asignación y sin posibilidad de
+compactación. Cuando un proceso que arriba no puede ser alojado en memoria, espera hasta
+que pueda serlo y los que siguen en la cola de arribos son evaluados para asignarle su región.
+
+14. Considere la siguiente tabla de segmentos
+Nº BASE LIMITE
+0 227 1500
+1 1900 25
+2 10 115
+3 2010 1325
+4 3570 718
+5 4700 27
+6 5910 320
+7 5100 700
+ ¿Cuál es la dirección física para las siguientes direcciones lógicas? (siempre y cuando sean válidas)
+a. 0 , 710 d. 5 , 73 g. 6 , 195 j. 7 , 640 m. 0 , 1715
+b. 1 , 10 e. 2 , 114 h. 5 , 14 k. 7 , 515 n. 4 , 620
+c. 4 , 440 f. 3 , 1115 i. 1 , 33 l. 1 , 21 o. 6 , 348
+
+15. Considere un sistema de paginado con frames de memoria de 100 bytes
+a. ¿Cómo almacenaría los segmentos del ejercicio 13?
+b. Arme las tablas de página para tal implementación.
+c. ¿Existe fragmentación interna? ¿Cuánta?
+
+16. Dado un esquema de administración de memoria MVT y la siguiente tabla de procesos:
+Proceso Tiempo de arribo Tiempo de CPU I/O Tamaño (en kbyte)
+P01 1 3 1 4
+P02 2 2 3
+P03 3 6 2,4 2
+P04 4 9 1,5,7 4
+P05 5 7 4
+P06 6 5 3 4
+P07 7 8 3
+P08 8 4 1
+Sabiendo que:
+
+ El algoritmo de atención para la carga de procesos en memoria es FIFO, siempre que quepa
+(uno que cabe puede pasar sobre otro que no cabe pero que llegó antes).
+ La selección del hueco de memoria donde alojar cada proceso se hace según First Fit.
+ La memoria total disponible es de 10 kbytes.
+ La política de atención de procesos por la CPU es de FCFS.
+a. Describir el seguimiento de atención a procesos y mapas de asignación de memoria.
+b. Decir en qué momento se produce compactación (si ocurriera).
+c. Calcular turnaround promedio, tiempo de espera promedio y tiempo de respuesta promedio.

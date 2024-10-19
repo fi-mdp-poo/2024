@@ -1,0 +1,103 @@
+
+
+
+1. Defina Memoria Virtual.
+
+Memoria Virtual es una técnica de administración de memoria que permite la ejecución de procesos 
+no completamente cargados en la memoria física (rompe Principio de Completitud)
+fuente: POWER DEL GORDO
+
+2. ¿Qué es un fallo de página? ¿Cuándo se produce? Describa las acciones que debe tomar el
+sistema operativo cuando esto sucede.
+referencia a una pagina valida a una pagina ausente en memoria (RAM)
+
+Ante un Fallo de acceso, el SO necesita traer a la memoria principal el fragmento del proceso que
+contiene la dirección lógica válida y ausente que provocó el Fallo de acceso:
+– El SO emite una solicitud de Lectura de I/O al disco (donde está alojado lo que require) y pone al
+proceso en estado Bloqueado por I/O.
+– El SO dispara otro proceso de usuario para que se ejecute mientras se realiza la operación de I/O.
+– Una vez que el fragmento requerido se ha traído a la memoria principal (se ha emitido la interrupción
+de satisfacción de la I/O), se devuelve el control al SO, y coloca el proceso afectado en el estado Listo.
+
+
+3. ¿Cuáles son las ventajas de la paginación por demanda sobre la segmentación por demanda?
+CHATGPT
+Simplicidad en la Gestión de Memoria:
+La paginación usa bloques de tamaño fijo (páginas), lo que simplifica la asignación y liberación de memoria. 
+En cambio, la segmentación utiliza bloques de tamaño variable, lo que puede complicar la fragmentación.
+
+Menor Fragmentación:
+La paginación tiende a reducir la fragmentación interna, ya que el tamaño de las páginas es constante
+ y se utiliza de manera uniforme. La segmentación puede sufrir tanto de fragmentación interna como externa.
+
+Mejor Uso de la Memoria:
+Al cargar páginas según se necesiten, la paginación puede hacer un uso más eficiente de la memoria, 
+permitiendo que se alojen múltiples procesos que no requieran de toda su memoria de forma simultánea.
+
+Manejo de Fallas:
+En paginación, las fallas de página son más comunes, pero el sistema puede manejar estas fallas de manera
+ eficiente, trayendo solo la página necesaria. En segmentación, las fallas de segmento pueden requerir 
+ la carga de todo un segmento, lo que puede ser más costoso.
+
+Acceso Rápido:
+La paginación permite un acceso más rápido a la memoria, ya que las páginas suelen estar bien organizadas 
+y permiten un acceso más directo.
+
+Virtualización Eficiente:
+La paginación facilita la implementación de sistemas de memoria virtual, permitiendo que los programas utilicen
+ más memoria de la que físicamente está disponible.
+
+
+4. Mencione la diferencia entre un algoritmo de reemplazo global y uno local.
+LOCAL: Se reemplaza una página del conjunto de frames asignado al proceso.
+GLOBAL: Se reemplaza una página del conjunto total de frames de la memoria, sin importar a qué proceso está asignado
+
+5. ¿Qué criterios existen para determinar la cantidad de frames a asignar a cada usuario?
+cantidad explicita de operandos + 1
+
+
+6. ¿Qué es la anomalía de Belady? ¿Qué algoritmos de reemplazo de páginas la padecen?
+Fenómeno que ocurre cuando incrementar los frames asignados a un proceso no garantiza la disminución 
+de su cantidad de fallas de página. (asignar + frames no es mejor rendimiento)
+Lo padece fifo
+
+
+7. Defina Thrashing e Hiperpaginación. ¿Qué condiciones deben darse para que suceda cada uno?
+
+Hiperpaginación:
+✓ Cuando tenemos una cantidad fija de frames asignados, reemplazo local y alta tasa de falla de páginas, decimos que estamos en 
+Hiperpaginación, que es circunscripta al proceso en cuestión.
+✓ El SO expulsa una página de un proceso, justo antes de ser usada. 
+✓ El procesador consume más tiempo intercambiando páginas del proceso que ejecutando instrucciones de usuario.
+
+Trashing:
+✓ Cuando tenemos una cantidad variable de frames asignados (no hay mínimo garantizado), reemplazo global y alta tasa de falla de páginas, 
+decimos que estamos en Trashing, que afecta a todo el Sistema.
+✓ El SO reemplaza una página de otro proceso, que luego ese proceso requerirá.
+✓ Los procesos se van robando páginas entre si y ninguno puede ejecutar operaciones. Sólo hay fallos de páginas. 
+
+
+
+8. Dada la siguiente secuencia de referencias a memoria
+115 116 99 324 715 418 99 10 625 652 103 223
+410 469 410 580 410 400 204 278 514 619 633 114
+121 222
+Considerando frames de 100 bytes y 3 frames asignados a cada usuario,
+a. Obtenga la cadena de referencias a páginas.
+b. Calcule la tasa de falla de página para reemplazo de página tipo: FIFO, OPT, LRU, LFU, MFU.
+
+
+9. Dado que la memoria principal está compuesta por cuatro páginas de uso público, use la siguiente
+tabla para responder las siguientes preguntas:
+Pag Tiempo de Carga Ultima referencia Bit de referencia Bit de Modificación
+0 126 279 1 0
+1 230 280 1 0
+2 120 282 1 1
+3 160 290 0 0
+
+¿Qué página será seleccionada como página victima si se utilizan los siguientes algoritmos de
+reemplazo?
+ FIFO puro
+ FIFO no modificada primero
+ LRU puro
+ LRU no modificado primero

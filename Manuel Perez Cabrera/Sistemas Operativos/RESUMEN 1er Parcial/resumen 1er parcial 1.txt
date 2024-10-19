@@ -1,0 +1,183 @@
+Unidad 1 : 
+
+1. Defina “Sistema Operativo” y enuncie sus objetivos principales.
+
+	Un sistema operativo es un software fundamental que actúa como intermediario entre los
+usuarios y el hardware de una computadora. 
+
+Los objetivos principales de un sistema operativo son:
+	•Eficiencia: 
+	– Permite que los recursos de un sistema informático se aprovechen de la major manera posible. 
+	•Usabilidad
+	– Hace que un computador sea más fácil de utilizar.
+	•Capacidad de evolución (dinamismo):
+	– Permite la introducción de nuevos dispositivos (hardware) y programas en el SC y nuevos servicios en el SO sin interferir en el funcionamiento.
+(PREGUNTAR SI ESTOS SON OBJETIVOS DEL SO)
+	•Capacidad de transparencia
+	•Seguridad
+	•Eficiencia de lo uso de recursos
+	•Proteccion
+	•Gestion de eventos
+	•Gestion de ejecucion de procesos
+
+2. ¿Cuáles son las “generaciones” que se marcan en la evolución de los sistemas operativos? Mencione los elementos distintivos en cada una.
+
+ •La primera generación (1945 a 1955): tubos al vacío. 
+ •La segunda generación (1955 a 1965): transistores y sistemas de procesamiento por lotes. 
+ •La tercera generación (1965 a 1980): circuitos integrados y multiprogramación.
+ •La cuarta generación (1980 a la fecha): las computadoras personales.
+
+3. Defina los siguientes conceptos:
+
+a. TAREA: es la unidad de ejecucion para el usuario, se dice q es una entidad viva
+
+b. PROGRAMA: conjunto ordenado y finito de pasos para resolver un problema.NO CONSUME RECURSOS (BIBLIOTECA TORTA) 
+
+c. PROCESO: es un programa en ejecucion,(consume recursos)
+	-El SO lo identifica con un id
+	-Puede tener prioridad
+	-Variables propias de gestion(PC)
+	-PROCESO = CODIGO + STACK + ID + PCB + DATOS
+
+d. MULTIPROGRAMACION: 
+	– El SO tiene la capacidad de mantener varios programas (PROCESOS PREGUNTAR) en memoria.
+	– Se aprovechan los tiempos muertos de carga y descarga del Código
+	– Siempre hay solo un proceso (en ejecución)
+
+e. MULTITAREA:
+	– El SO tiene la capacidad de ejecutar varias tareas a la vez
+	– El tiempo del procesador se comparte entre los diversos usuarios (Tiempo compartido).
+	– Múltiples procesos parcialmente ejecutados a la vez: “cuasi concurrencia”.
+	-
+f. MULTIPROCESAMIENTO:
+	– El SO tiene la capacidad de trabajar con varios procesadores
+	– Todos los procesadores pueden ejecutar las mismas funciones.
+	– Estos procesadores comparten la misma memoria principal y dispositivos de E/S => (Multiprocesamiento simétrico).
+
+4. ¿Cuáles son las ventajas de la multitarea?
+
+ • Mejor uso de los recursos del sistema.
+ • Mayor rendimiento general del sistema.
+ • Mayor capacidad de respuesta a las interacciones de usuario.
+
+5. Identifique cuáles son los recursos de un sistema de computadoras.
+
+PROCESADOR
+MEMORIA
+DISPOSITIVOS E/S 
+INFORMACION
+
+6. Defina modo dual de operación, modo kernel (monitor, supervisor) y modo usuario.
+
+• Modo Kernel (supervisor): En este modo, el sistema operativo tiene acceso total a todo el hardware y puede ejecutar instrucciones privilegiadas.
+
+• Modo Usuario: En este modo, los programas de los usuarios tienen acceso limitado al hardware, y deben hacer llamadas al sistema para acceder a servicios restringidos.
+
+7. ¿Qué es una instrucción privilegiada? Dé al menos cuatro ejemplos de instrucciones privilegiadas y no privilegiadas
+
+Las instrucciones privilegiadas solo pueden ejecutarse en el modo kernel
+	PRIVILEGIADAS:	
+	1.-cambiar el bit de modo
+	2.-quitar u asignar recursos
+	3.-matar procesos
+	4.-escribir en sectores de memoria restringidos
+	NO PRIVILEGIADAS:
+	1.-Operaciones aritméticas
+	2.-Operaciones lógicas
+	3.-Carga y almacenamiento
+	4.-Instrucciones de desplazamiento
+
+8. Llamadas al sistema y programas del sistema.
+a) Defina ambos términos.
+
+• Llamada al Sistema: Es un mecanismo que permite que un programa de usuarioo solicite un servicio del sistema operativo, como abrir un archivo o asignar memoria.
+• Programa del Sistema: Un conjunto de utilidades que proporcionan funcionalidades a los usuarios, como comandos de consola.(Los programas del sistema son un conjunto de programas esenciales que permiten la gestión y el funcionamiento del sistema operativo)
+  Un Programa del Sistema es un conjunto de llamadas al Sistema	
+b) Dé ejemplos de cada uno de ellos.
+
+c) Muestre en un ejemplo como uno se implementa como un conjunto del otro.(VER)
+
+9. ¿Qué es una interrupción? Clasifique las mismas y dé al menos un ejemplo de cada tipo
+
+Es el mecanismo por el cual el SO se entera que ha ourrido un evento, que es de su interés, y que debe atenderlo.
+Es la interrupción de un proceso debida a un factor externo al proceso y que se lleva a cabo de tal modo que el procesador pueda atender la demanda y reanudar luego la ejecución del proceso. 
+
+	De hardware
+	   – Sincrónicas
+	   • De reloj
+
+	   – Asincrónicas
+	   • Provocadas por los dispositivos
+	   • Fallas de hard
+
+	De software
+	   – Explícitas
+	   • Llamadas al sistema
+
+	   – Implícitas
+	   • Desbordamiento aritmético.
+	   • División por cero.
+	   • Intento de ejecutar una instrucción ilegal.
+	   • Referencia a una zona de memoria fuera del espacio permitido al usuario.
+
+10. Relacione los conceptos de instrucción privilegiada, llamada al sistema e interrupción
+
+Los tres conceptos están relacionados, ya que una llamada al sistema puede generar una interrupción para ejecutar una instrucción privilegiada en modo kernel.
+
+11. Describa la secuencia de eventos en el Hardware ante la ocurrencia de una interrupción.
+(veeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeR)
+1. El hardware detiene la ejecución del proceso.
+2. El sistema guarda el estado del proceso interrumpido.
+3. El sistema ejecuta el controlador de interrupciones.
+4. Tras atender la interrupción, el sistema restaura el estado del proceso y retoma su ejecución.
+
+
+VERSION MIA 
+1.-Generación de la Interrupción:
+	Un dispositivo de E/S finaliza su tarea y genera una señal de interrupción en una línea del bus.
+
+2.-Detección por el Controlador de Interrupciones:
+	El controlador de interrupciones detecta la señal y decide si atenderla de inmediato o aplazarla si hay interrupciones en curso o de mayor prioridad.
+
+3.-Identificación del Dispositivo:
+	El controlador coloca un número en las líneas de dirección que identifica al dispositivo que requiere atención.
+
+4.-Envío de la Señal a la CPU:
+	El controlador de interrupciones genera una señal para interrumpir a la CPU.
+
+5.-Interrupción de la CPU:
+	La CPU detiene su actividad actual.
+
+6.-Consulta en la Tabla de Vectores de Interrupción:
+	La CPU busca el número del dispositivo en la tabla de vectores de interrupción para localizar el contador del programa que apunta al procedimiento de servicio de interrupciones (ISR).
+
+7.-Ejecución de la Rutina de Servicio de Interrupción (ISR):
+	La CPU comienza a ejecutar el ISR correspondiente.
+
+8.-Reconocimiento de la Interrupción:
+	El ISR reconoce la interrupción escribiendo un valor en el puerto del controlador de interrupciones, lo que permite que se emita otra interrupción si es necesario.
+
+9.-Guardado del Contexto de la CPU:
+	La CPU guarda información sobre el estado actual (registros, contador de programa, etc.), usualmente en la pila.
+
+10.-Problemas Potenciales con la Pila:
+	Si se usa la pila de un proceso de usuario, podría no ser válida, lo que genera riesgos de fallos.
+
+11.-Uso de la Pila del Kernel:
+	La mayoría de las CPUs prefieren usar la pila del kernel para evitar estos problemas.
+
+12.-Cambio al Modo Kernel:
+	El cambio al modo kernel puede implicar tiempos adicionales debido a la recarga de cachés o tablas de traducción de memoria (TLB).
+
+13.-Reanudación de la Actividad Interrumpida:
+	Una vez completada la interrupción, la CPU reanuda la tarea que fue interrumpida, utilizando la información previamente guardada.
+
+
+12. Explique la diferencia entre Buffering y Spooling.
+
+• Buffering: Almacena temporalmente datos durante la transferencia entre dos
+dispositivos.
+
+• Spooling: Gestiona la cola de trabajos de E/S, permitiendo que varios trabajos se
+almacenen en cola para ser procesados secuencialmente.
+

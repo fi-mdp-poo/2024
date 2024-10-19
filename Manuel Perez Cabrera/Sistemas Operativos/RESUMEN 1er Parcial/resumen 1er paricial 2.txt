@@ -1,0 +1,250 @@
+PDF 2 FILE SYSTEM
+
+1. ¿Qué se entiende por sistema de archivos en sentido amplio y en sentido estricto?
+
+-> SENTIDO AMPLIO: Conjunto de convenciones de diseño que determinan el manejo de la información en un SO. Estas convenciones se establecen en tiempo de diseño del producto.
+
+-> SENTIDO ESTRICTO: El conjunto de información, estructurada bajo determinadas pautas, en un Sistema de Computación. Es decir, es una instancia. conjunto de información de cada Sistema de Computación. 
+
+
+
+2. Defina los siguientes conceptos:
+
+-> Dato: Unidad mínima de información.
+-> Campo: Un atributo de un registro de datos.*
+-> Información: Darle sentido a los datos , es el recurso mas importante
+-> Archivo: conjunto persistente de bits ordenado, con un nombre único. Es la unidad de representación de la información de un Sist. de Computacion.
+-> Registro: Conjunto de campos que representan una entidad.*
+
+
+3. Mencione los aspectos relevantes sobre los cuales fijar una posición a la hora de definir un File System
+en sentido amplio.
+
+– Nombrado.(reglas de naming)
+– Estructura.(simples y complejos)
+– Tipos.
+– Modos de acceso a los archivos.
+– Métodos de asignación de archivos.
+– Estructuras para la gestión del espacio libre.
+– Criterios de selección del espacio libre. 
+– Atributos.
+– Operaciones.
+– Organización lógica. 
+
+
+
+4. ¿Cuáles son los principales atributos de un archivo?
+
+La lista de atributos varia considerablemente de un sistema a otro.
+– Nombre
+– Identifier–unique tag (número) que lo identifica en el file system
+– Tipo (en SO que soportan tipos)
+– Puntero a la ubicación
+– Tamaño
+– Timestamp de creación
+– Propietario
+– Protección (mecanismo para discriminar el acceso a
+lectura, escritura o ejecución)
+
+
+
+5. ¿Cuáles son los diferentes tipos de archivos?
+
+Los diferentes tipos de archivos son: (VER)
+
+SEGUN CLASE:
+- binario
+- texto
+- estructurados
+
+SEGUN FILMINA:
+- de texto
+- de datos
+- ejecutables
+
+SEGUN TENENBAUM:
+- archivos regulares
+- archivos especiales de caracteres
+- archivos especiales de bloques
+
+
+6. ¿Cuáles son los tipos de operaciones que se pueden controlar sobre un archivo?
+
+– Create
+– Read
+– Write
+– Execute
+– Seek
+– Append
+– Delete
+– Truncate
+– Open
+– Close
+– Lock
+
+
+
+7. Diferencie el uso que dan Windows y Linux a las extensiones de los archivos.
+
+• Windows: Utiliza extensiones de archivo como .exe, .txt para determinar el tipo de archivo.*
+• Linux: No depende de las extensiones para determinar el tipo de archivo, utiliza permisos y metadatos del archivo.*
+
+
+
+8. Diferencie los conceptos método de acceso y método de asignación.
+
+-> Método de Acceso: Se refiere a cómo se accede a los datos de un archivo. Puede ser
+directo , secuencial o indexado.**
+
+-> Método de Asignación: Se refiere a cómo se distribuyen los bloques de datos de un
+archivo en el sistema de almacenamiento, por ejemplo, asignación contigua,
+vinculada o indexada.**
+
+
+
+9. Nombre y explique brevemente los distintos métodos de acceso a un archivo.
+
+- DIRECTO: El acceso a un bloque del archivo se hace en forma directa, sin necesidad de haber accedido a los anteriores para lograrlo.
+
+- SECUENCIAL: El acceso a un bloque del archivo se hace en forma secuencial, requiriendo indefectiblemente haber accedido a los anteriores para lograrlo.
+
+- INDEXADO: El acceso a un bloque del archivo se hace mediante un índice que nos lleva al mismo.
+
+
+
+
+
+10. Enumere los métodos de asignación de espacio para los archivos, explíquelos brevemente y muestre
+con un gráfico como se ve un archivo en el espacio de almacenamiento de acuerdo a cada método.
+
+->CONTIGUA:
+- Cuando se crea un archivo se le asigna un único conjunto contiguo de bloques. 	
+- La tabla de asignación necesita sólo una entrada por cada archivo:
+- Bloque de comienzo y longitud del archivo.
+- Se produce fragmentación interna en el ultimo bloque.
+- Se produce fragmentación externa (bloques libres entre archivos) => Compactación.
+- Si se daña un bloque, se pierde solo ese.
+
+ventajas:
+- Simple de implementar 
+- Alto rendimiento, solo se necesita una búsqueda
+- Si se daña un bloque, se daña solo ese
+
+desventajas:
+- El disco queda fragmentado cuando se elimina un archivo, por lo que si el disco se llena habría que desfragmentarlo (compactación) y eso es un arma extremadamente costosa
+
+(DIBUJO)
+
+-> VINCULADA:
+- La asignación se hace con bloques individuales (no necesariamente contiguos) que se encadenan.
+- Cada bloque contiene un puntero al siguiente bloque de la cadena.
+- En cada bloque hay información propiamente dicha e información administrativa (burocrática)
+- Bloque de comienzo y longitud del archivo.
+
+ventajas:
+- No genera fragmentación, no requiere compactación. 
+
+desventajas:
+- El acceso aleatorio es extremadamente lento.
+- Para llegar al bloque n se tiene que leer lo n-1 bloques anteriores
+- Se ocupa espacio extra (punteros)
+- Si se pierde un bloque se pierde el resto del archivo
+
+
+(DIBUJO)
+
+-> INDEXADA:
+- Tenemos aquí dos tipos de bloques:
+ 	Bloques de índices (contienen punteros, información burocrática)
+	Bloques de datos (información propiamente dicha del archivo).
+
+- La tabla de asignación de archivos contiene un puntero al primer bloque de índices del archivo.
+- Los bloques de índices contienen N punteros ordenados a bloques de datos del archivo.
+- Los bloques de índices están encadenados entre sí. El ultimo puntero de un bloque de índices apunta a otro bloque índice (con otros N punteros a bloques de datos)
+- No hay fragmentación externa.
+- El acceso es pseudo-directo: secuencial a la lista de bloques índices y directo a los bloques de datos.
+
+ventajas:
+- No genera fragmentación, no requiere compactación. 
+- Acceso aleatorio sencillo
+
+desventajas:
+- toda la tabla debe estar en memoria todo el tiempo.
+
+(DIBUJO)
+
+-> UNIX (I-NODOS):
+-UNIX utiliza una variación de la asignación vinculada que evita el acceso secuencial a la cadena de bloques de índices: 
+
+12 PUNTEROS:
+
+– 9 punteros a bloques de datos. Cada puntero señala a un bloque de datos puros y garantiza que el acceso a los primeros bloques de datos del archivo sea directo.
+– 1 puntero a un bloque de índices de 1er nivel, cuyos punteros apuntan directamente a bloques de datos.
+– 1 puntero a un bloque de índices de 2do nivel, cuyos punteros apuntan a bloques de índices de 1er nivel, cuyos punteros apuntan directamente a bloques de datos.
+– 1 puntero a un bloque de índices de 3er nivel…
+
+- No hay fragmentación externa.
+- El acceso es pseudo-directo, pero mucho más rápido: secuencial a los bloques índices (a lo sumo 3 accesos) y directo a los bloques de datos.
+
+
+
+
+
+11. Para cada método de asignación, indique si existe fragmentación, mencionando en ese caso de que tipo de fragmentación estamos hablando, como se la puede resolver, quién es el responsable de hacerlo y qué herramientas brinda el SO para tratar este problema. 
+
+Fragmentación en los método de asignación:
+->CONTIGUA (externa e interna en el ultimo bloque), la fragmentación externa se puede resolver mediante la
+compactación y el SO se encarga de eso.
+->VINCULADA, no tiene fragmentación externa, solo interna. no se puede resolver. (ver)
+->INDEXADA, no tiene fragmentación externa, solo interna. no se puede resolver. (ver)
+->UNIX, no tiene fragmentación externa
+
+
+
+
+12. Según el método de asignación utilizado, esboce las distintas alternativas para manejar la lista de 
+espacios libres. 
+
+– First Fit (Primer hueco, más rápido)
+– Best Fit (Mejor hueco, menos fragmentación externa, ideal para archivos inmutables)
+– Worst Fit (Peor hueco, mas fragmentación externa y chances de crecimiento para los archivos sin necesidad de realocarlos) 
+
+
+
+
+13. Enumere las distintas estructuras de directorio, descríbalas y señale alguna ventaja de cada una. 
+
+-> Directorio tipo árbol: 
+- Existe un directorio maestro que contiene un número determinado de directorios de usuario. 
+- Cada uno de estos directorios puede tener, a su vez, subdirectorios y archivos como entradas.  
+- Los archivos son las “hojas” del árbol 
+
+ventaja: Cualquier archivo puede ser localizado siguiendo un camino desde el directorio raíz o maestro.
+
+-> Directorio tipo grafo acíclico:
+- Se trata de un modelo de árbol donde un nodo del mismo archivo puede tener más de un padre. 
+- A estos nodos se puede llegar por más de un camino, por medio de “atajos” o links. 
+- Se permite que los links vayan solo a archivos (no a directorios), para garantizar que sea acíclico y evitar posibles “islas”.
+
+Hay dos tipos de links: 
+– Soft link (acceso directo)
+– Hard link
+
+ventaja: Se puede llegar a un archivo por medio de mas de un camino (links)
+
+
+
+
+
+14. Diferencie un enlace (hard-link) y un enlace simbólico (soft-link). 
+
+-> Soft link (acceso directo): 
+- El nodo es apuntado por un puntero dentro de la estructura de la tabla de alocación de cada padre, como si fuera un archivo propio.  
+- Cuando el archivo es borrado por alguno de sus padres, es eliminado materialmente, y el link que lo apuntaba desde el otro padre queda apuntando “al vacío”. 
+
+->Hard link: 
+- El nodo es apuntado por un puntero dentro de la estructura de la tabla de alocación de cada padre, como si fuera un archivo propio. 
+- Cuando el archivo apuntado por el hard link es “borrado”, se lo “desengancha” del padre que lo eliminó pero SIGUE EXISTIENDO para el otro padre.  
+- Requiere de un Contador de padres. Cuando el Contador de padres llega a cero, entonces se borra materialmente el archivo. 
+
+

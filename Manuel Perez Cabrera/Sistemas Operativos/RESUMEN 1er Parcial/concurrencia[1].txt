@@ -1,0 +1,137 @@
+
+1. Mencione las condiciones que deben darse para permitir la ejecución concurrente.
+R(S1) ∩ W(S2) = {}
+W(S1) ∩ R(S2) = {}
+W(S1) ∩ W(S2) = {} 
+Se tiene que cumplir que entre dos procesos concurrentes:
+Mientras uno lee que el otro no pueda escribir
+Mientras uno escribe que el otro no pueda leer
+No escriban los dos a la vez
+
+
+2. ¿Qué aspectos del Sistema Operativo deben considerarse para permitir la ejecución concurrente de
+procesos?
+-El SSOO debe proporcionar servicios de creación y terminación de procesos.
+- El SSOO debe ser capaz de seguir los procesos activos. (PCB)
+- El SSOO debe asignar y quitar recursos a los procesos activos.
+- El SSOO debe ser capaz de proteger los datos y recursos de un proceso
+contra las intervenciones no intencionadas de otros procesos
+-debe manejar la planificación, la sincronización, la gestión de memoria, y la comunicación entre procesos, usando mecanismos como semáforos y monitores.
+
+
+3.Mencione y explique los siguientes problemas clásicos de concurrencia.
+a. Productor - Consumidor
+Sincronización entre un proceso que genera datos y otro que los consume
+
+b. Lectores - Escritores
+Controla el acceso simultáneo entre procesos que solo leen y los que escriben.
+
+c. Filósofos que cenan
+Se trata de coordinar múltiples procesos que compiten por recursos limitados.
+
+d. Rendez-vouz
+Dos procesos deben sincronizarse en un punto exacto antes de continuar.
+
+
+4. Defina región (sección) critica. ¿Qué requisitos debe satisfacer el algoritmo que resuelva el
+problema de la sección crítica?
+Seccion critica = Segmento de código que manipula un recurso compartido y debe ser ejecutado
+de forma atómica.
+• Se asocia a un recurso un mecanismo de gestión de exclusión mutua.
+• Solamente un proceso puede estar simultáneamente en la sección crítica de un
+recurso.
+
+La solución al problema de la Sección Crítica debe cumplir tres requisitos:
+r1) Exclusión mutua: Solamente se permite que un proceso en la sección crítica.
+r2) Progreso: No debe ser posible que un proceso que solicite acceso a una sección crítica sea postergado indefinidamente. Cuando ningún proceso esté en una sección crítica, cualquier proceso que solicite su entrada lo hará sin demora.
+r3) No se puede hacer suposiciones sobre la velocidad relativa de los procesos ni el número de procesadores.
+r4) Un proceso permanece en su sección crítica durante un tiempo finito.
+
+En resumen el algoritmo debe garantizar la exclusión mutua, el progreso , la espera limitada y tiempo finito.
+
+
+5. Describa los tipos de interacciones posibles entre procesos que se ejecutan en forma concurrente.
+
+Las interacciones pueden ser de cooperacion o competencia y los procesos deben comunicarse de manera segura, ya sea compartiendo memoria o mediante mensajes.
+->Independientes o competencia :
+- Estado no compartido
+- Ejecución determinista
+- Reproducible
+- Puede Detenerse y Reiniciarse sin efectos adversos
+->Cooperativos:
+- Estado compartido
+- Resultado no predecible
+- Ejecución no determinista
+
+
+6. Mencione las alternativas de tratamiento de la exclusión mutua por Hardware y por Software. 
+
+->Solución por Software
+Algoritmo de Dekker (Dijkstra) Problemas: Espera activa, la manipulación de la variable turno no es atómica. 
+
+->Solución por Hardware
+Inhabilitación de Interrupciones,El proceso no sería interrumpido. Solamente sería válido en sistemas monoprocesador.
+********************
+**** ?? semaforos, monitores entran en por software?
+*******
+Solución del Sistema Operativo y lenguajes de programacion
+Semáforos: Un semáforo es una variable entera con tres operaciones
+atómicas asociadas.
+
+
+7. Defina Semáforo. Explique las diferentes formas de implementación de esta solución.
+
+Es una variable entera con tres operaciones atómicas asociadas init(), wait(),signal().
+Semáforo Binario: Sólo puede tomar el valor 0 o 1. (mutex)
+Semáforo n-ario: Puede tomar cualquier valor entero positivo
+
+8. Defina Monitor. Explique las ventajas y desventajas de un monitor frente a un semáforo. 
+Un Monitor es un tipo de dato abstracto que consta de uno o más procedimientos, una secuencia de inicio y datos locales. Encapsula la sincronización y permite exclusión mutua automática, evitando la manipulación directa de los semáforos. Es más seguro pero más complejo que los semáforos.grado de abstraccion mayor
+
+
+
+9. ¿Cuál es el significado del término espera activa? Explique la diferencia entre espera activa y
+bloqueo.
+
+La espera activa es una técnica de sincronización en la que un proceso se mantiene en un bucle continuo (polling) comprobando repetidamente una condición, como la disponibilidad de un recurso. Durante este tiempo, el proceso sigue ejecutándose, consumiendo tiempo de CPU, en lugar de ceder el control del procesador.
+
+Diferencias entre Espera Activa y Bloqueo
+
+-Uso de CPU:
+->Espera Activa: El proceso sigue ejecutándose y consumiendo tiempo de CPU mientras espera. Esto puede resultar en un uso ineficiente de los recursos, especialmente si el tiempo de espera es largo.
+->Bloqueo: El proceso se suspende y cede el control del CPU a otros procesos. Esto permite que otros procesos utilicen la CPU mientras el proceso bloqueado espera a que se cumpla una condición.
+
+Implementación:
+->Espera Activa: Frecuentemente se utiliza en situaciones donde la espera es corta o cuando se requiere una respuesta rápida, como en operaciones de baja latencia.
+->Bloqueo: Utilizado en situaciones donde la espera puede ser prolongada, como al esperar recursos, E/S, o señales de otros procesos.
+
+
+En resumen:
+La espera activa implica ciclos de CPU desperdiciados, ya que el proceso espera activamente a que se libere un recurso. El bloqueo es más eficiente porque el proceso es suspendido hasta que el recurso esté disponible.
+
+
+10. Mencione y ejemplifique los distintos esquemas de comunicaciones entre procesos
+
+Paso de Mensajes
+-Ofrece a la vez Sincronización y Comunicación. Tiene la ventaja adicional de que puede ser implementado en sistemas monoprocesador con memoria compartida, sistemas multiprocesador y sistemas distribuidos. 
+
+Esquemas de Comunicación entre Procesos
+-Comunicación Sincrónica
+Definición: El proceso emisor se bloquea hasta que el receptor ha recibido el mensaje. Ambos procesos deben estar activos al mismo tiempo.
+
+-Comunicación Asincrónica
+Definición: El proceso emisor envía un mensaje y continúa su ejecución sin esperar a que el receptor lo reciba.
+
+-Comunicación Bloqueante
+Definición: Tanto el envío como la recepción de mensajes bloquean a los procesos involucrados hasta que se complete la operación.
+
+-Comunicación No Bloqueante
+Definición: El proceso emisor envía el mensaje y continúa sin esperar a que el receptor lo reciba, o el receptor verifica la llegada de mensajes sin bloquear su ejecución.
+
+-Dirección Directa
+Definición: El mensaje se envía directamente a un proceso específico.
+
+-Dirección Indirecta
+Definición: El mensaje se envía a un buzón o puerto, y el receptor lo obtiene desde allí.
+
+de donde scaste esto ???????

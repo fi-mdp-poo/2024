@@ -1,0 +1,63 @@
+que genio , muchas gracias 
+
+basicamente la idea del tp es que nosotros hagamos como una consultoria sobre sistemas operativos y antes tenemos que hablar un poco sobre la empresa 
+
+a. Algunos detalles mínimos de la empresa. Respaldo, partners.
+b. Segmento del mercado al que apunta con el producto (en nuestro caso Android)
+
+pd: no sabemos bien si la empresa de la que hablar es google o alphabet
+
+https://es.wikipedia.org/wiki/Android_Inc.
+
+
+Información sobre Guangdong
+Ubicación: Guangdong está situada en la costa sur de China
+
+
+Es importante evaluar en cada producto:
+    a) La empresa
+        a. Algunos detalles minimos de la empresa. Respaldo, partners.
+        b. Segmento del mercado al que apunta con el producto
+    b) Producto - Puertas adentro
+        a. Caracteristicas generales del sistema
+        b. Caracteristicas del Sistema de Archivos
+        c. Caracteristicas de la Administracion de Memoria
+        d. Caracteristicas de la Administracion del Procesador
+        e. Caracteristicas de Seguridad
+        f. Facilidades para desarrolladores
+        g. Puntos fuertes y debiles frente a otros productos de la competencia.
+    c) Producto - Puertas Afuera
+        a. Difusion y Presencia en el mundo
+        b. Posibilidad de soporte a usuarios
+        c. En que casos se recomienda la instalacion de este producto
+        d. Costos del producto
+
+
+
+
+
+Característica	        Android     	            iOS     	                    HarmonyOS
+
+Desarrollador	        Google	                    Apple	                        Huawei
+
+Modelo de Licencia	    Código abierto	            Propietario	                    Código abierto y propietario
+
+Dispositivos            Amplia gama                 Exclusivamente en               Principalmente en dispositivos Huawei
+soportados              (smartphones,tablets,TVs)    dispositivos Apple		
+	
+Interfaz de             Personalizable	            Uniforme y controlada	        Fluida y adaptable
+Usuario	
+
+Ecosistema	            Google Play,                multiples fabricantes            integración con dispositivos Apple	Huawei AppGallery, interoperabilidad
+                                                    App Store
+
+Actualizaciones	        Dependientes de fabricantes	Controladas y regulares por Apple	Regulares, pero limitadas a Huawei
+Segmento de Mercado	Usuarios generales, desarrolladores	Usuarios premium, creativos	Usuarios de Huawei y entusiastas de tecnología
+
+
+
+APPLE iOS 
+
+ANDROID 
+
+HARMONY OS 

@@ -1,0 +1,231 @@
+1. ¿Qué es "independencia del dispositivo"?
+
+Capacidad del Sistema Operativo de brindar una visión lógica simplificada de los dispositivos de
+entrada/salida, hacia los usuarios, procesos y otros componentes el sistema.
+
+
+
+
+2. Definir “driver” y “controlador de dispositivo”. ¿Para qué se utiliza cada uno de estos?
+
+- Driver (software): Transforman operaciones genéricas que le pasa el SO en comandos específicos que el controlador interpreta.
+- Controlador (hardware): Transforman los comandos a flujos de bits y los entregan aldispositivo y al bus del sistema.
+
+
+
+
+3. Dispositivos de bloque y dispositivos de caracter. Explique qué los diferencia en el tratamiento de la
+información.
+
+DISPOSITIVOS DE BLOQUE
+- Mínima unidad de tratamiento de datos: bloque de tamaño fijo.
+- Referenciados y direccionados unívocamente.
+- Cada operación es independientemente de las demás
+- Ejemplos: disco rígido, cds, memorias sd.
+DISPOSITIVOS DE CARACTER 
+- Mínima unidad de tratamiento de datos: carácter (byte).
+- No hay forma de referenciarlos ni son direccionables.
+- Operan con flujos de caracteres sin importar la estructura.
+- Ejemplos: mouse, teclado, impresora, placa de red.
+
+/////////CHAT, está MAL . VERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+Forma de Transferencia:
+Dispositivos de bloque: manejan datos en bloques.
+Dispositivos de carácter: manejan datos carácter por carácter.
+
+Tipo de Acceso:
+Dispositivos de bloque: acceso aleatorio a bloques de datos.
+Dispositivos de carácter: acceso secuencial.
+
+Uso y Aplicaciones:
+Dispositivos de bloque: adecuados para almacenamiento masivo y gestión de grandes conjuntos de datos.
+Dispositivos de carácter: adecuados para la entrada de datos en tiempo real y aplicaciones interactivas.
+///////w
+
+
+
+
+
+4. Según la evolución de las técnicas de Entrada-Salida, describa cuál es la ventaja que ofrece cada una respecto
+de su predecesora.
+
+Entrada Salida Programada: El procesador envía un mandato de E/S, a petición de un proceso, a un dispositivo de E/S; a continuación, ese
+proceso realiza una espera activa hasta que se complete la operación antes de continuar.
+
+Entrada Salida dirigida por Interrupciones: El procesador emite un mandato de E/S a petición de un proceso. Este se suspende, dando lugar a otro trabajo,
+que luego es interrumpido por el mismo módulo de E/S cuando la solicitud haya sido satisfecha.
+
+Entrada Salida por Acceso Directo a Memoria (DMA)
+Un módulo de DMA controla el intercambio de datos entre la memoria principal y el dispositivo de E/S. El
+procesador manda una petición de transferencia de un bloque de datos al módulo de DMA y resulta interrumpido
+sólo cuando se haya transferido el bloque completo.
+
+
+
+
+
+
+
+5. Explique los pasos para la lectura de un bloque de datos en los siguientes casos: E/S Programada, E/S dirigida
+por interrupciones, DMA (Acceso Directo a Memoria).
+
+E/S Programada: 
+
+E/S dirigida por interrupciones:
+
+DMA (Acceso Directo a Memoria):
+
+
+
+
+
+
+
+6. Explique la diferencia entre Buffering y Spooling. 
+
+BUFFERING
+Técnica que permite superponer la carga de datos a memoria con la ejecución del proceso.
+- Dispone de un espacio de memoria principal para regular el intercambio de datos entre los
+procesos y los dispositivos de E/S, impidiendo pérdidas de información por desbordes o bajas de
+performance por insuficiencia de datos. 
+
+SPOOLING
+Técnica que permite superponer la descarga de datos de memoria con la ejecución del proceso.
+- Dispone de un espacio en memoria secundaria como un buffer de almacenamiento persistente
+para reducir la espera cuando los procesos transfieren datos a dispositivos periféricos.
+
+
+
+
+7. ¿Cuál es la estructura de un sistema de discos? Realice un esquema. ¿Cómo está comprendido el tiempo de
+lectura / escritura en un disco?
+
+
+Estructura de un disco
+- Pistas: círculos concéntricos sobre el plato donde se sitúa la cabeza lectora.
+- Cilindro: conjunto de pistas alineadas verticalmente en los distintos platos.
+- Sector: subdivisión dentro de las pistas
+- Bloque: mínima unidad de almacenamiento utilizada por el disco. Intersección pista/sector.
+- Cabezal: dispositivo que efectúa la lectoescritura.
+- Brazo: extensión mecánica que ubica el cabezal.
+
+Tacceso = Tbusqueda + Tlatencia + Ttransferencia
+Tbusqueda = Tarranque + Tdesplazamiento
+Tarranque: tiempo de velocidad 0 a velocidad constante
+Tdesplazamiento: Tcilindro * Ncilindros (es lo único mejorable por el SO)
+Tlatencia = 1/ (2*Vrotacion) = ½ Trotacion
+Ttransferencia = Nbloques a leer * (Trotacion / Mbloques del cilindro)
+
+
+
+
+
+8. Describa brevemente la secuencia de acciones que se ejecutan ante los siguientes eventos.
+i. Usuario presiona una tecla mientras usa editor de texto (Dispositivo Periférico Local).
+ii. Software envía un byte por placa red (Puerto de Comunicación).
+iii. Usuario guarda los cambios en un documento (Sistema de Archivos).
+
+
+
+
+9. ¿Qué es un sistema de discos RAID? ¿Qué objetivos persigue?
+
+Redundant Array of Independent Disks
+Redundant Array of Inexpensive Disks
+
+Tecnología permite simular un dispositivo de almacenamiento lógico utilizando en
+paralelo varios físicos.
+
+10. RAID software vs. RAID hardware. ¿Qué ventajas y desventajas posee c/u? ¿En qué casos conviene el uso de
+RAID por software?
+
+                |         Hardware                       |          Software
+Ciclos de reloj |                                        |
+(perfomance)    |                                        |
+                | Actúa independientemente del           |
+                | procesador – mayor rendimiento         |Consume procesador – Menor rendimiento
+                _________________________________________________________________________________
+                |                                        |
+Costo           | Tiene costo extra de la placa          |No tiene costo extra
+                |                                        |
+                _________________________________________________________________________________
+Rotura          | Guarda en la memoria la                |
+                | configuración RAID – muy peligroso     |
+                | si se rompe                            |Puede recuperarse  mucho mas fácilmente
+
+
+11. Dé un ejemplo de aplicación para RAID 1, RAID 3 y RAID 5.(CHAT)
+
+
+RAID 1 (Mirroring):
+
+Aplicación:
+Un RAID 1 es ideal para sistemas donde la tolerancia a fallos es crucial, 
+como en servidores de bases de datos pequeños o medianos. Por ejemplo,
+una empresa que maneja transacciones críticas (como un sistema de pagos en línea)
+utilizaría RAID 1 para garantizar que la información esté siempre disponible, 
+ya que cada disco tiene un duplicado exacto.
+
+
+RAID 3 (Byte-level striping with dedicated parity):
+
+Aplicación:
+RAID 3 se usa en aplicaciones de alto rendimiento que requieren manejar grandes archivos secuenciales,
+como el procesamiento de video o edición de audio profesional.
+Estas aplicaciones se benefician del acceso rápido a los datos secuenciales debido al striping y a la corrección de errores proporcionada por la paridad.
+
+
+RAID 5 (Block-level striping with distributed parity):
+
+Aplicación:
+RAID 5 es común en sistemas que necesitan un equilibrio entre rendimiento, capacidad y tolerancia a fallos,
+como servidores de aplicaciones o entornos de virtualización. Por ejemplo, 
+en un sistema de almacenamiento para una empresa mediana que maneja múltiples aplicaciones y usuarios, 
+RAID 5 ofrece una buena combinación de rendimiento y seguridad con un uso eficiente del espacio en disco.
+
+Cada nivel de RAID está diseñado para ofrecer un tipo específico de protección y rendimiento, 
+dependiendo de las necesidades de la aplicación.
+
+
+
+12. Llegan solicitudes en disco al driver de disco de los siguientes cilindros:
+100, 104, 205, 30, 299, 322, 73, 310, 262, 120, 172, 391, 6, 133, 152, 132, 100, 238
+Las solicitudes llegan en ese orden. La cabeza se encuentra inicialmente en la posición 40 y se mueve de menor
+a mayor. Son en total 500 cilindros. El tiempo de movimiento es 1 mseg por cilindro. Calcular el movimiento de
+brazo para atender las solicitudes planteadas, considerando sólo representativo el tiempo de movimiento de
+brazo, con los siguientes algoritmos de planificación:
+- FCFS (El primero en llegar es el primero en ser atendido)
+- SSTF (Primero la solicitud más próxima)
+- SCAN
+- LOOK
+- C-SCAN
+- C-LOOK
+Considerar en cada caso:
+ Si ya están las solicitudes al momento de comenzar.
+ Si las solicitudes llegan en ese orden con una diferencia de 20 mseg entre cada arribo.
+
+
+
+
+13. Dadas las siguientes solicitudes formadas por el par (cilindro/sector) que llegan al driver en el tiempo indicado.
+Cilindro Sector Tiempo de arribo
+24          5           0
+42          2           0
+21          6           0
+17          8           50
+5           9           50
+56          3           50
+72          7           200
+46          4           200
+8           1           200
+32          6           200
+46          2           200
+Calcule el tiempo que se necesita para satisfacer todas las solicitudes utilizando un algoritmo de scheduling de
+disco C-LOOK.
+Datos de referencia:
+- Cantidad de cilindros: 80.
+- Cantidad de sectores por pista: 10.
+- Tiempo de seek (búsqueda): 2 mseg por cilindro cruzado tanto de ida como de vuelta.
+- Tiempo de latencia: 25 mseg.
+- Tiempo de transferencia: 5 mseg por sector.
+- Posición inicial del brazo lector: 15
