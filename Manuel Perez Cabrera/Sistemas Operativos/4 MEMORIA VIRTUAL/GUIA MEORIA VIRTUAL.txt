@@ -22,30 +22,13 @@ de satisfacción de la I/O), se devuelve el control al SO, y coloca el proceso a
 
 3. ¿Cuáles son las ventajas de la paginación por demanda sobre la segmentación por demanda?
 CHATGPT
-Simplicidad en la Gestión de Memoria:
-La paginación usa bloques de tamaño fijo (páginas), lo que simplifica la asignación y liberación de memoria. 
-En cambio, la segmentación utiliza bloques de tamaño variable, lo que puede complicar la fragmentación.
+Eficiencia en la gestión de la memoria: En la paginación por demanda, las páginas de un proceso se traen a la memoria principal solo cuando son requeridas, lo que permite un uso más eficiente de la memoria y evita cargar datos innecesarios​(Clase Memoria Virtual 2…).
 
-Menor Fragmentación:
-La paginación tiende a reducir la fragmentación interna, ya que el tamaño de las páginas es constante
- y se utiliza de manera uniforme. La segmentación puede sufrir tanto de fragmentación interna como externa.
+Reemplazo de páginas: La paginación por demanda facilita el reemplazo de páginas individuales de manera más granular, lo que puede ser más eficiente que reemplazar segmentos completos en la segmentación​(Clase Memoria Virtual 2…).
 
-Mejor Uso de la Memoria:
-Al cargar páginas según se necesiten, la paginación puede hacer un uso más eficiente de la memoria, 
-permitiendo que se alojen múltiples procesos que no requieran de toda su memoria de forma simultánea.
+Soporte de hardware más sencillo: La paginación por demanda suele requerir un hardware menos complejo en comparación con la segmentación, que necesita tablas de segmentos más grandes y costosas​(Clase Memoria Virtual 2…).
 
-Manejo de Fallas:
-En paginación, las fallas de página son más comunes, pero el sistema puede manejar estas fallas de manera
- eficiente, trayendo solo la página necesaria. En segmentación, las fallas de segmento pueden requerir 
- la carga de todo un segmento, lo que puede ser más costoso.
-
-Acceso Rápido:
-La paginación permite un acceso más rápido a la memoria, ya que las páginas suelen estar bien organizadas 
-y permiten un acceso más directo.
-
-Virtualización Eficiente:
-La paginación facilita la implementación de sistemas de memoria virtual, permitiendo que los programas utilicen
- más memoria de la que físicamente está disponible.
+Menor fragmentación externa: La paginación tiene menos problemas de fragmentación externa, ya que las páginas tienen un tamaño fijo, a diferencia de los segmentos que pueden variar en tamaño​(Clase Memoria Virtual 2…).
 
 
 4. Mencione la diferencia entre un algoritmo de reemplazo global y uno local.
