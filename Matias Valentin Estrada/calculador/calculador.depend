@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1729547446 source:c:\users\matias\desktop\poo\g5\calculador\main.cpp
+	<iostream>
+	"CalculadorImpositivo.h"
+
+1729549672 c:\users\matias\desktop\poo\g5\calculador\calculadorimpositivo.h
+	<iostream>
+	<string>
+	<vector>
+	"Factura.h"
+	"ReciboDePago.h"
+
+1729548998 source:c:\users\matias\desktop\poo\g5\calculador\calculadorimpositivo.cpp
+	"CalculadorImpositivo.h"
+
+1729549151 c:\users\matias\desktop\poo\g5\calculador\factura.h
+	<iostream>
+	<string>
+
+1729549151 source:c:\users\matias\desktop\poo\g5\calculador\factura.cpp
+	"Factura.h"
+
+1729549672 c:\users\matias\desktop\poo\g5\calculador\recibodepago.h
+	<iostream>
+	<string>
+
+1729605135 source:c:\users\shastin\desktop\calculador\calculadorimpositivo.cpp
+	"CalculadorImpositivo.h"
+
+1729605083 c:\users\shastin\desktop\calculador\calculadorimpositivo.h
+	<iostream>
+	<string>
+	<vector>
+	"Factura.h"
+	"ReciboDePago.h"
+	"Contribuyente.h"
+
+1729549151 c:\users\shastin\desktop\calculador\factura.h
+	<iostream>
+	<string>
+
+1729605221 c:\users\shastin\desktop\calculador\recibodepago.h
+	<iostream>
+	<string>
+
+1729605221 source:c:\users\shastin\desktop\calculador\factura.cpp
+	"Factura.h"
+
+1729605221 source:c:\users\shastin\desktop\calculador\recibodepago.cpp
+	"ReciboDePago.h"
+
+1729604902 source:c:\users\shastin\desktop\calculador\main.cpp
+	<iostream>
+	"CalculadorImpositivo.h"
+
+1729603018 c:\users\shastin\desktop\calculador\contribuyente.h
+	<iostream>
+	<string>
+	"Factura.h"
+
+1729605275 source:c:\users\shastin\desktop\calculador\contribuyente.cpp
+	"Contribuyente.h"
+
