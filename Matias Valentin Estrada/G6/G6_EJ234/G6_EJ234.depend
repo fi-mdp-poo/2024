@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1730223838 source:/home/usuario/Escritorio/G6/G6_EJ234/main.cpp
+	<iostream>
+	"MiExcepcion.h"
+	<iostream>
+	<stdexcept>
+
+1730223665 /home/usuario/Escritorio/G6/G6_EJ234/MiExcepcion.h
+
