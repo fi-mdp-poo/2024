@@ -1,0 +1,9 @@
+g++ -o mi_programa mi_programa.cpp
+valgrind --leak-check=full ./mi_programa
+
+==1234== LEAK SUMMARY:
+==1234==    definitely lost: 40 bytes in 1 blocks
+==1234==    indirectly lost: 0 bytes in 0 blocks
+==1234==      possibly lost: 0 bytes in 0 blocks
+==1234==    still reachable: 0 bytes in 0 blocks
+==1234==         suppressed: 0 bytes in 0 blocks
