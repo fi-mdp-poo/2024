@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1605030359 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\01 swap max\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\01 swap max\complejos.h
+	<iostream>
+
+1605030704 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\01 swap max\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\01 swap max\complejos.h
+	<iostream>
+
+1698325403 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\01 swap max\main.cpp
+	<iostream>
+	"complejos.h"
+
+1698325419 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\01 swap max\complejos.h
+	<iostream>
+
+1698325419 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\01 swap max\complejos.cpp
+	"complejos.h"
+

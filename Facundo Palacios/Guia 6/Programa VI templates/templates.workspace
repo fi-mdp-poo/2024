@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Templates">
+		<Project filename="01 Swap max/01 Swap max.cbp" />
+		<Project filename="02 Doble template/02 Doble template.cbp" />
+		<Project filename="03 Sobrecarga/03 Sobrecarga.cbp" />
+		<Project filename="04 Stack/04 Stack.cbp" />
+		<Project filename="05b Stack_h_full/05b Stack_h_full.cbp" />
+		<Project filename="06 Stack_clase.cxx/06 Stack_clase.cbp" />
+		<Project filename="07 Stack_opciones/07 Stack_opciones.cbp" />
+		<Project filename="08 Explicita/08 Explicita.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1730827458 source:/home/usuario/Documentos/POO/vector/main.cpp
+	<iostream>
+	"vector.h"
+
+1730828159 /home/usuario/Documentos/POO/vector/vector.h
+	<iostream>
+	<stdexcept>
+	"vector.tpp"
+
+1730828175 /home/usuario/Documentos/POO/vector/vector.tpp
+

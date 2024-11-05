@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1476564382 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05b stack_h_full\main.cpp
+	"pila h_full.h"
+	"persona.h"
+
+1476564374 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05b stack_h_full\pila h_full.h
+	<iostream>
+
+1503939042 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05b stack_h_full\persona.h
+	<iostream>
+
+1662657953 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05b stack_h_full\persona.cpp
+	"persona.h"
+	<ctime>
+
