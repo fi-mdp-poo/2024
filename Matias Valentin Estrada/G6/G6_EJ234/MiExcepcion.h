@@ -4,7 +4,14 @@
 // Excepción personalizada
 class MiExcepcion{
     public:
-        MiExcepcion(const int& num, const int& den): numerador(num), denominador(den){}
+        MiExcepcion(){}
+        virtual const char* what()const throw()=0;
+};
+
+// Excepción derivada para división por cero
+class DivisionPorCero : public MiExcepcion {
+    public:
+        DivisionPorCero(const int& num, const int& den): numerador(num), denominador(den){}
         virtual const char* what()const throw(){return "División por cero no permitida.";}
 
         int getNumerador() const {return numerador;}
