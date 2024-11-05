@@ -3,6 +3,24 @@
 ## Ejercicios
 
 1. Explique cada línea del siguiente fragmento de código.
+    ```cpp
+    double leerDouble()
+    {
+        cin.exceptions(ios::failbit | ios::badbit);
+        
+        double dato = 0.0;
+        try
+        {
+            cin >> dato;
+        }
+        catch(ios_base::failure & e)
+        {
+            cout << e.what() << ": dato no válido" << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<int>::max(), '\n');
+        }
+        return dato;
+    }
 
 2. Cree un bloque `try`, una instrucción `catch` y una excepción simple.
 
@@ -13,6 +31,7 @@
 5. Escriba un programa que tome un nombre de archivo como parámetro y que abra el archivo para lectura. Lea todos los caracteres del archivo y despliegue en la pantalla solo las letras y los signos de puntuación (ignore todos los caracteres no imprimibles).
 
 6. Escriba un programa que tome un nombre de archivo como parámetro y que abra el archivo para lectura. Lea todos los bytes y presente en pantalla la información en formato Hex, como se muestra a continuación. Además, genere un nuevo archivo de texto y guarde la información presentada en pantalla, respetando el mismo formato.
+![Memory dump](images/mem_dump.png)
 
 7. Realizar un programa que permita crear un archivo nuevo, abrir uno existente, agregar, buscar, modificar y borrar registros. El nombre del archivo será ingresado por teclado. Cada registro del archivo será un objeto `persona` con los atributos `nombre`, `dirección` y `teléfono`. Así mismo, para que el usuario pueda elegir cualquiera de las opciones mencionadas, el programa visualizará en pantalla un menú similar al siguiente:
    ```plaintext
