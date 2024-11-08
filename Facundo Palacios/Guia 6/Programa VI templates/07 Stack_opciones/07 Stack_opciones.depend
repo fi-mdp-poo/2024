@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1507809092 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 6\templates\programas\07 stack_opciones\main.cpp
+	"pila3.h"
+
+1507809183 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.h
+	<iostream>
+	"persona.h"
+
+1503939043 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 6\templates\programas\07 stack_opciones\persona.h
+	<iostream>
+
+1507809183 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.cpp
+	"pila3.h"
+
+1507809092 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\07 stack_opciones\main.cpp
+	"pila3.h"
+
+1539873965 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.h
+	<iostream>
+	"persona.h"
+
+1503939043 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\07 stack_opciones\persona.h
+	<iostream>
+
+1539874160 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.cpp
+	"pila3.h"
+
+1605034625 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\07 stack_opciones\main.cpp
+	"pila3.h"
+
+1539873964 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.h
+	<iostream>
+	"persona.h"
+
+1503939042 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\07 stack_opciones\persona.h
+	<iostream>
+
+1605034625 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.cpp
+	"pila3.h"
+
+1605034625 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\07 stack_opciones\main.cpp
+	"pila3.h"
+
+1539873964 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.h
+	<iostream>
+	"persona.h"
+
+1503939042 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\07 stack_opciones\persona.h
+	<iostream>
+
+1605034625 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.cpp
+	"pila3.h"
+
+1698332645 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\07 stack_opciones\main.cpp
+	"pila3.h"
+
+1539873964 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.h
+	<iostream>
+	"persona.h"
+
+1503939042 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\07 stack_opciones\persona.h
+	<iostream>
+
+1698332681 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\07 stack_opciones\pila3.cpp
+	"pila3.h"
+
+1662657953 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\07 stack_opciones\persona.cpp
+	"persona.h"
+	<ctime>
+

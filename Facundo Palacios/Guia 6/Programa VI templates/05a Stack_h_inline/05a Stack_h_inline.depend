@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1539797933 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\05a stack_h_inline\main.cpp
+	"pila h_inline.h"
+	"persona.h"
+
+1539797170 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\05a stack_h_inline\pila h_inline.h
+	<iostream>
+
+1503939043 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\05a stack_h_inline\persona.h
+	<iostream>
+
+1539798312 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05a stack_h_inline\main.cpp
+	"pila h_inline.h"
+	"persona.h"
+
+1605033512 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05a stack_h_inline\pila h_inline.h
+	<iostream>
+
+1503939042 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05a stack_h_inline\persona.h
+	<iostream>
+
+1662657953 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\05a stack_h_inline\persona.cpp
+	"persona.h"
+	<ctime>
+

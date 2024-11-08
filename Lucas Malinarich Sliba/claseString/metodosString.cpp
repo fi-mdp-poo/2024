@@ -1,15 +1,11 @@
 #include <iostream>
 #include "claseString.h"
 
-myString::myString(){
-    theString=NULL;
-    longitud=0;
-}
+using namespace std;
 
-myString::myString(const char *str){
-    longitud=sizeof(str);
-    theString=new char[longitud];
-    strcpy(theString, str);
+myString::myString(const char* str, int lenght){
+    setString(str);
+    setLongitud(lenght);
 }
 
 myString::~myString(){
@@ -17,45 +13,59 @@ myString::~myString(){
 }
 
 void myString::setString(const char *str){
-    longitud=sizeof(str);
-    if(theString)
-        delete[]theString;
-    theString = new char[longitud];
-    strcpy(theString, str);
+    try{
+        if(!str)
+            throw 0;
+        longitud=strlen(str); //crear int longitudString(const char *);
+        if(theString)
+            delete[]theString;
+        theString=new char[longitud+1];
+        for(int i=0; i<longitud; i++)
+            theString[i]=str[i];
+    }
+    catch(int){
+        theString=NULL;
+    }
+    catch(bad_alloc&){
+        cout<<"Meemoria insuficiente.\n";
+    }
 }
 
-myString* myString::operator=(const char *str){
+myString& myString::operator=(const char *str){
     setString(str);
-    return this;
+    return *this;
 }
 
-void imprimirString(myString &str){ std::cout<<str.theString<<std::endl; }
-
-char* myString::getString(){
-    char* copia=new char[longitud];
-    strcpy(copia, theString);
-    return copia;
+void imprimirString(const myString &str){
+    char *cadena=str.getString();
+    cout<<cadena<<endl;
+    delete cadena;
 }
 
-int myString::getLongitud(){ return longitud; }
-
-void myString::concatenarString(const char *str){ //hay un error oculto en esta función
-    strcat(theString, str);
+char* myString::getString()const{
+    try{
+        char* copia=new char[getLongitud()];
+        strcpy(copia, theString);
+        return copia;
+    }
+    catch(bad_alloc&){
+        cout<<"Memoria insuficiente.\n";
+        return NULL;
+    }
 }
 
-myString* myString::operator+=(const char *str){
-    strcat(theString, str);
-    return this;
-}
+void myString::setLongitud(int lenght){ longitud=lenght; }
+
+int myString::getLongitud()const{ return longitud; }
 
 bool myString::estaVacio(){
     return (theString)? true : false;
 }
 
 bool myString::sonIguales(const char *str){
-    int longitudStr=sizeof(str), i=0;
-    bool iguales=(longitudStr==longitud);
-    while(i<longitud&&iguales){
+    int longitudStr=strlen(str), i=0;
+    bool iguales=(longitudStr==getLongitud());
+    while(i<longitudStr&&iguales){
         iguales=(theString[i]==str[i]);
         i++;
     }
@@ -68,7 +78,31 @@ bool myString::operator==(const char *str){
 }
 
 int myString::encontrarSubString(const char *str){ //actualmente incompleta
-    int position=0;
+    int empieza=-1;
 
-    return position;
+    return empieza;
+}
+
+void myString::copiarString(const char *str){ setString(str); }
+
+void myString::concatenarString(const char *str){
+    int nuevaLongitud=getLongitud()+strlen(str); //crear int longitudString(const char *);
+    int i=0, j=0;
+    char* nuevoString=new char[nuevaLongitud];
+    while(i<longitud){
+        nuevoString[i]=theString[i];
+        i++;
+    }
+    while(i<nuevaLongitud+1){
+        nuevoString[i]=str[j];
+        i++;
+        j++;
+    }
+    setString(nuevoString);
+    setLongitud(nuevaLongitud);
+}
+
+myString& myString::operator+=(const char *str){
+    concatenarString(str);
+    return *this;
 }

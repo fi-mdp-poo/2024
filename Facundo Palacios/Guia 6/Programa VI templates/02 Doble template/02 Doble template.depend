@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1476281417 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\02 doble template\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\02 doble template\complejos.h
+	<iostream>
+
+1604936931 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\02 doble template\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\02 doble template\complejos.h
+	<iostream>
+
+1476281416 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\02 doble template\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\02 doble template\complejos.h
+	<iostream>
+
+1666029396 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\02 doble template\main.cpp
+	<iostream>
+	"complejos.h"
+
+1504637818 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\02 doble template\complejos.h
+	<iostream>
+
+1698325761 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\02 doble template\complejos.cpp
+	"complejos.h"
+
+1698325760 source:f:\poo\guia 6\programa vi templates\02 doble template\complejos.cpp
+	"complejos.h"
+
+1504637818 f:\poo\guia 6\programa vi templates\02 doble template\complejos.h
+	<iostream>
+
+1666029396 source:f:\poo\guia 6\programa vi templates\02 doble template\main.cpp
+	<iostream>
+	"complejos.h"
+

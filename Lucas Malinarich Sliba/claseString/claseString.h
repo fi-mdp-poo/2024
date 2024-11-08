@@ -2,29 +2,37 @@
 #define CLASESTRING_H_INCLUDED
 
 #include <cstring>
+#include <iostream>
 
 class myString{
 private:
     char *theString;
     int longitud;
 public:
-    myString();
-    myString(const char*);
+    friend std::istream operator>>(std::istream&, myString&);
+    friend std::ofstream operator<<(std::ofstream&, myString&);
+
+    myString(const char* str=NULL, int lenght=0);
     ~myString();
     void setString(const char*);
-    myString* operator=(const char*);
-    friend void imprimirString(myString&);
-    char* getString(); //reserva memoria en el heap
-    int getLongitud();
-    void copiarString(const char*)//falta implementar
-    void concatenarString(const char*); //solucionar el error
-    myString* operator+=(const char*);
+    myString& operator=(const char*);
+
+    char* getString()const; //reserva memoria en el heap
+    void setLongitud(int);
+    int getLongitud()const;
+    void copiarString(const char*);
+    void concatenarString(const char*);
+    myString& operator+=(const char*);
     bool estaVacio();
     bool sonIguales(const char*);
     bool operator==(const char*);
-    int encontrarSubString(const char*);
+    int encontrarSubString(const char*); //actualmente incompleta
+    /*
+    char at(const int&);
+    char operator[](const int&);
+    */
 };
 
-void imprimirString(myString*);
+void imprimirString(const myString&);
 
 #endif // CLASESTRING_H_INCLUDED

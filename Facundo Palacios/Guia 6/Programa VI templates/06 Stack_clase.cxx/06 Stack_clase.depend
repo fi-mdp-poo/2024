@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1604937279 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\06 stack_clase.cxx\main.cpp
+	"pila h_c.h"
+	"persona.h"
+
+1507739552 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\06 stack_clase.cxx\pila h_c.h
+	<iostream>
+	"pila h_c.cxx"
+
+1476477500 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\06 stack_clase.cxx\pila h_c.cxx
+
+1503939042 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\06 stack_clase.cxx\persona.h
+	<iostream>
+
+1476565788 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\06 stack_clase.cxx\main.cpp
+	"pila h_c.h"
+	"persona.h"
+
+1507739552 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\06 stack_clase.cxx\pila h_c.h
+	<iostream>
+	"pila h_c.cxx"
+
+1476477500 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\06 stack_clase.cxx\pila h_c.cxx
+
+1503939042 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\06 stack_clase.cxx\persona.h
+	<iostream>
+
+1662657953 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\06 stack_clase.cxx\persona.cpp
+	"persona.h"
+	<ctime>
+
