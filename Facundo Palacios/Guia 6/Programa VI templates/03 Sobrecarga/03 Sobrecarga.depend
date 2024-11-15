@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1507726847 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\03 sobrecarga\main.cpp
+	<iostream>
+	<math.h>
+	"complejos.h"
+
+1504637818 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\03 sobrecarga\complejos.h
+	<iostream>
+
+1604936964 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\03 sobrecarga\main.cpp
+	<iostream>
+	<math.h>
+	"complejos.h"
+
+1504637818 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\03 sobrecarga\complejos.h
+	<iostream>
+
+1507726846 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\03 sobrecarga\main.cpp
+	<iostream>
+	<math.h>
+	"complejos.h"
+
+1504637818 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\03 sobrecarga\complejos.h
+	<iostream>
+
+1666028554 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\03 sobrecarga\main.cpp
+	<iostream>
+	<math.h>
+	"complejos.h"
+
+1504637818 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\03 sobrecarga\complejos.h
+	<iostream>
+
+1698325419 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\03 sobrecarga\complejos.cpp
+	"complejos.h"
+

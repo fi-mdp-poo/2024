@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1539793699 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\04 stack\main.cpp
+	<iostream>
+	"persona.h"
+
+1503939043 c:\users\roberto\google drive\programacion orientada objetos\cursada 2018\teoria\unidad 6\templates\programas\04 stack\persona.h
+	<iostream>
+
+1605032550 source:c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\04 stack\main.cpp
+	<iostream>
+	"persona.h"
+
+1503939042 c:\users\roberto\google drive\personal\programacion orientada objetos\teoria\unidad 6\templates\programas\04 stack\persona.h
+	<iostream>
+
+1605032550 source:c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\04 stack\main.cpp
+	<iostream>
+	"persona.h"
+
+1503939042 c:\users\roberto\documents\programacion\programacion orientada objetos\cursada 2022\teoria\unidad 6\templates\programas\04 stack\persona.h
+	<iostream>
+
+1662657953 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\04 stack\persona.cpp
+	"persona.h"
+	<ctime>
+
+1503939042 c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\04 stack\persona.h
+	<iostream>
+
+1698329828 source:c:\users\roberto\documents\gdrive\personal\poo\cursada 2023\teoria\unidad 6\templates\programas\04 stack\main.cpp
+	<iostream>
+	"persona.h"
+
+1698329828 source:f:\poo\guia 6\programa vi templates\04 stack\main.cpp
+	<iostream>
+	"persona.h"
+
+1503939042 f:\poo\guia 6\programa vi templates\04 stack\persona.h
+	<iostream>
+
+1662657952 source:f:\poo\guia 6\programa vi templates\04 stack\persona.cpp
+	"persona.h"
+	<ctime>
+

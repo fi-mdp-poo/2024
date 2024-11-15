@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Excepciones">
+		<Project filename="01 Terminacion/01 Terminacion.cbp" />
+		<Project filename="02 Division/02 Division.cbp" />
+		<Project filename="03 Catches/03 Catches.cbp" />
+		<Project filename="04 Exc acotadas/04 Exc acotadas.cbp" />
+		<Project filename="05 Exc file/05 Exc file.cbp" />
+		<Project filename="06 Relanzar/06 Relanzar.cbp" />
+		<Project filename="07 Terminate/07 Terminate.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
