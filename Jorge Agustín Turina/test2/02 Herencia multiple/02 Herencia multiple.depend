@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1473964628 source:c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\main.cpp
+	"estudiante.h"
+	"empleado.h"
+	"becario.h"
+
+1473269670 c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\persona.h
+	<iostream>
+
+1473463542 c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\estudiante.h
+	"persona.h"
+
+1473463542 source:c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\estudiante.cpp
+	"estudiante.h"
+
+1473359721 source:c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\empleado.cpp
+	"empleado.h"
+
+1473358988 c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\empleado.h
+	"persona.h"
+
+1473963797 source:c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\becario.cpp
+	"becario.h"
+
+1473465283 c:\users\roberto\documents\programacion orientada objetos\clases\unidad iv\programas\02 herencia multiple\becario.h
+	"empleado.h"
+	"estudiante.h"
+
+1505309227 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\becario.cpp
+	"becario.h"
+
+1473465283 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\becario.h
+	"empleado.h"
+	"estudiante.h"
+
+1473358988 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\empleado.h
+	"persona.h"
+
+1503939043 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\persona.h
+	<iostream>
+
+1505308175 c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\estudiante.h
+	"persona.h"
+
+1505309173 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\empleado.cpp
+	"empleado.h"
+
+1505309107 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\estudiante.cpp
+	"estudiante.h"
+
+1505308998 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\02 herencia multiple\main.cpp
+	"estudiante.h"
+	"empleado.h"
+	"becario.h"
+
+1631640160 source:c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\becario.cpp
+	"becario.h"
+
+1473465282 c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\becario.h
+	"empleado.h"
+	"estudiante.h"
+
+1473358988 c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\empleado.h
+	"persona.h"
+
+1503939042 c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\persona.h
+	<iostream>
+
+1505308174 c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\estudiante.h
+	"persona.h"
+
+1505309172 source:c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\empleado.cpp
+	"empleado.h"
+
+1505309106 source:c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\estudiante.cpp
+	"estudiante.h"
+
+1631640334 source:c:\users\roberto\google drive\programacion orientada objetos\teoria\unidad 4\programas\02 herencia multiple\main.cpp
+	"estudiante.h"
+	"empleado.h"
+	"becario.h"
+

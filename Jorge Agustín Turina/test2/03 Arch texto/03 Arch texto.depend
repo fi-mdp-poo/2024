@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1475087109 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 2\programas\03 arch texto\main.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	<windows.h>
+
+1505153489 source:c:\users\roberto\google drive\programacion orientada objetos\cursada 2017\teoria\unidad 4\programas\03 arch texto\main.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	<windows.h>
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1631635163 source:g:\my drive\programacion orientada objetos\teoria\unidad 4\programas\01 modulo fase\main.cpp
+	<iostream>
+	<fstream>
+	"polar.h"
+
+1601671785 g:\my drive\programacion orientada objetos\teoria\unidad 4\programas\01 modulo fase\polar.h
+	"complejos.h"
+
+1504637818 g:\my drive\programacion orientada objetos\teoria\unidad 4\programas\01 modulo fase\complejos.h
+	<iostream>
+
+1631562340 source:g:\my drive\programacion orientada objetos\teoria\unidad 4\programas\01 modulo fase\polar.cpp
+	"polar.h"
+	<math.h>
+
