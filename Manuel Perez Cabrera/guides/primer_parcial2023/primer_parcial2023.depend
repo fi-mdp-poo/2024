@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1731872230 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\primer_parcial2023\cmatriz.cpp
+	"CMatriz.h"
+
+1731857089 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\primer_parcial2023\cmatriz.h
+	<string>
+	<fstream>
+	<iostream>
+
+1731872375 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\primer_parcial2023\main.cpp
+	<iostream>
+	"CMatriz.h"
+
