@@ -1,0 +1,39 @@
+Soy un rectangulo de base =  0.7, altura =  0.3 y area 0.21
+BackColor
+Componente rojo : 0
+Componente verde : 175
+Componente azul : 3
+Componente alpha : 250
+
+ForeColor
+Componente rojo : 0
+Componente verde : 175
+Componente azul : 250
+Componente alpha : 3
+
+Soy un rectangulo de base =  1.2, altura =  2.5 y area 3
+BackColor
+Componente rojo : 66
+Componente verde : 10
+Componente azul : 254
+Componente alpha : 11
+
+ForeColor
+Componente rojo : 66
+Componente verde : 254
+Componente azul : 11
+Componente alpha : 10
+
+Soy circulo de radio =  2 y area = 6.28
+BackColor
+Componente rojo : 16
+Componente verde : 255
+Componente azul : 0
+Componente alpha : 255
+
+ForeColor
+Componente rojo : 16
+Componente verde : 0
+Componente azul : 255
+Componente alpha : 255
+
