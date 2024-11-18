@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1731871537 source:c:\users\jorge\documents\github\2024\jorge agustín turina\test2\main.cpp
+	<iostream>
+	<vector>
+	"persona.h"
+	<fstream>
+	<sstream>
+	<iostream>
+
+1731870245 c:\users\jorge\documents\github\2024\jorge agustín turina\test2\persona.h
+	<string>
+
+1731868363 source:c:\users\jorge\documents\github\2024\jorge agustín turina\test2\persona.cpp
+	"persona.h"
+
+1731870975 source:c:\users\jorge\documents\github\2024\jorge agustín turina\test2\03 arch texto\main.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	<windows.h>
+

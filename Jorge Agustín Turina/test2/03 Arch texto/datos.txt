@@ -1,0 +1,2 @@
+pirulo prueba letras ñ Ñ á é í ó ú; 10
+30

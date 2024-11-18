@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1729982271 source:c:\users\jorge\documents\github\2024\jorge agustín turina\test\main.cpp
+	<iostream>
+	<vector>
+	<string>
+

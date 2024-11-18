@@ -21,14 +21,7 @@ public:
         return p;
     }
 
-    // Sobrecarga del operador delete para la clase A
-    void operator delete(void* p) noexcept {
-        std::cout << "Sobrecargando operador delete en la clase A\n";
-        std::free(p);
-    }
-
     A() { std::cout << "Constructor de A\n"; }
-    virtual ~A() { std::cout << "Destructor de A\n"; }
     virtual void print() const {
         std::cout << "Clase A\n";
     }
@@ -38,29 +31,15 @@ public:
 class B : virtual public A {
 public:
     B() { std::cout << "Constructor de B\n"; }
-    ~B() { std::cout << "Destructor de B\n"; }
     void print() const override {
         std::cout << "Clase B\n";
     }
 };
 
-// Clase derivada C con herencia múltiple virtual
-class C : public virtual A, public B {
-public:
-    C() { std::cout << "Constructor de C\n"; }
-    ~C() { std::cout << "Destructor de C\n"; }
-    void print() const override {
-        std::cout << "Clase C\n";
-    }
-};
-
 int main() {
     // Asignación de memoria utilizando el operador new sobrecargado en la clase A
-    A* obj = new C();  // Aquí se llama a la sobrecarga de new en la clase A
-    obj->print();      // Debería llamar a la versión de C
-
-    // Liberación de memoria utilizando el operador delete sobrecargado
-    delete obj;        // Aquí se llama a la sobrecarga de delete en la clase A
+    A* obj = new B();  // Aquí se llama a la sobrecarga de new en la clase A
+    obj->print();
 
     return 0;
 }

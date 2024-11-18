@@ -1,0 +1,2 @@
+este es un archivo de texto que voy a pasar a binario!! o puede fallar
+2024 es el año actual
