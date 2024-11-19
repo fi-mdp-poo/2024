@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1731962599 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\ccirculo.cpp
+	"CCirculo.h"
+
+1731955658 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\ccirculo.h
+	"CFigura.h"
+
+1731955943 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\cfigura.h
+	<iostream>
+	"CColor.h"
+
+1731964018 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\ccolor.h
+	<ostream>
+
+1731964324 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\cfigura.cpp
+	"CFigura.h"
+
+1731962913 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\crectangulo.cpp
+	"CRectangulo.h"
+
+1731955498 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\main.cpp
+	"ManejadorFiguras.h"
+
+1731956285 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\manejadorfiguras.h
+	<vector>
+	<cstdint>
+	<ostream>
+	<fstream>
+	"CFigura.h"
+	"CRectangulo.h"
+	"CCirculo.h"
+
+1731964387 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\ccolor.cpp
+	"CColor.h"
+
+1731956266 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\crectangulo.h
+	"CFigura.h"
+
+1731963277 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2019\manejadorfiguras.cpp
+	"ManejadorFiguras.h"
+

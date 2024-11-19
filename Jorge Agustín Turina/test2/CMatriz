@@ -1,0 +1,11 @@
+#include "CMatriz."
+
+CMatriz::CMatriz()
+{
+    //ctor
+}
+
+CMatriz::~CMatriz()
+{
+    //dtor
+}
