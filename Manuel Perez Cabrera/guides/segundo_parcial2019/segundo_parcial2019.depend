@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1731965747 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ccirculo.cpp
+	"CCirculo.h"
+
+1731965747 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ccirculo.h
+	"CFigura.h"
+	<cmath>
+
+1731965747 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\cfigura.h
+	<iostream>
+	"CColor.h"
+
+1731962775 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ccolor.h
+	<ostream>
+
+1731965760 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\cfigura.cpp
+	"CFigura.h"
+
+1731965404 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\crectangulo.cpp
+	"CRectangulo.h"
+
+1731964352 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\crectangulo.h
+	"CFigura.h"
+
+1731955752 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ctriangulo.cpp
+	"CTriangulo.h"
+
+1731955752 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ctriangulo.h
+
+1731966086 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\main.cpp
+	"ManejadorFiguras.h"
+
+1731966086 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\manejadorfiguras.h
+	<vector>
+	<cstdint>
+	<ostream>
+	<fstream>
+	<algorithm>
+	"CFigura.h"
+	"CRectangulo.h"
+	"CCirculo.h"
+
+1731964030 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\ccolor.cpp
+	"CColor.h"
+
+1731966169 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\segundo_parcial2019\manejadorfiguras.cpp
+	"ManejadorFiguras.h"
+

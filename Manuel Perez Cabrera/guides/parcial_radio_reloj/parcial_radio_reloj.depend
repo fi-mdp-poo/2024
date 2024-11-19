@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1731949127 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\ctime.cpp
+	"cTime.h"
+
+1731949127 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\ctime.h
+
+1731953505 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\cradio.cpp
+	"cRadio.h"
+
+1731953505 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\cradio.h
+
+1731953310 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\cradioreloj.cpp
+	"cRadioReloj.h"
+
+1731953310 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\cradioreloj.h
+	"cRadio.h"
+	"cReloj.h"
+
+1731953171 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\creloj.h
+	"cTime.h"
+
+1731953422 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\creloj.cpp
+	"cReloj.h"
+
+1731953447 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\guides\parcial_radio_reloj\main.cpp
+	"cRadioReloj.h"
+	"cTime.h"
+

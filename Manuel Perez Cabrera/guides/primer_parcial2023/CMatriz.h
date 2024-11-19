@@ -3,21 +3,31 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
+
 
 class CMatriz
 {
     public:
         CMatriz();
-        virtual ~CMatriz();
+        CMatriz(CMatriz&);
+         ~CMatriz();
 
         void cargar(string);
-        friend ostream& operator << (ostream&, CMatriz&);
+        CMatriz operator+ (int);
+        CMatriz& operator+= (const CMatriz&);
+        CMatriz& operator= (const CMatriz&);
+
+
         void Set_filas(unsigned int);
         void Set_columnas(unsigned int);
-        unsigned int Get_columnas();
-        unsigned int Get_filas();
+        unsigned int Get_component_matriz(unsigned int , unsigned int)const ;
+        unsigned int Get_columnas()const;
+        unsigned int Get_filas()const;
+        friend ostream& operator << (ostream&, CMatriz&);
+
 
     protected:
         unsigned int filas;
