@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1731874526 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\cmatriz.cpp
+	"CMatriz.h"
+
+1731877890 c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\cmatriz.h
+	<ostream>
+
+1731875454 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\manejo_archivos2.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+
+1731875992 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\manejo_archivos.cpp
+	<iostream>
+	<fstream>
+	<vector>
+
+1731878326 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\cpantalla .cpp
+	"CPantalla .h"
+
+1731880407 c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\cpantalla .h
+	"CMatriz.h"
+
+1731880528 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\ccolor.cpp
+	"CColor.h"
+
+1731880544 c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\ccolor.h
+	<ostream>
+	"CMatriz.h"
+
+1731878729 source:c:\users\jorge\documents\github\2024\jorge agustín turina\cmatriz\main.cpp
+	<iostream>
+	"CMatriz.h"
+	"CPantalla .h"
+	"CColor.h"
+
