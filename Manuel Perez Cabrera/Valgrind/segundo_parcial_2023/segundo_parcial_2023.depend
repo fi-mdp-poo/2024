@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1732120130 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.cpp
+	"cServicio.h"
+
+1732120406 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.h
+	"cTrabajador.h"
+	"cCliente.h"
+	<iostream>
+
+1732105947 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.cpp
+	"cFecha.h"
+
+1732109156 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.h
+
+1732108144 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.cpp
+	"cTrabajador.h"
+
+1732116536 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.h
+	"cFecha.h"
+	<string>
+
+1732120574 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\main.cpp
+	<iostream>
+	"cManejadorServicios.h"
+
+1732106411 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.cpp
+	"cCliente.h"
+
+1732109121 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.h
+	"string"
+
+1732120808 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cpintura.cpp
+	"cPintura.h"
+
+1732120406 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cpintura.h
+	"cServicio.h"
+
+1732120747 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\calarma.cpp
+	"cAlarma.h"
+
+1732120511 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\calarma.h
+	<string>
+	"cServicio.h"
+
+1732120130 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.cpp
+	"cManejadorServicios.h"
+
+1732120130 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.h
+	"cServicio.h"
+	"cPintura.h"
+	"cAlarma.h"
+	<vector>
+	<iostream>
+	<string>
+	<fstream>
+
