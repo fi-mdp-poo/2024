@@ -1,5 +1,10 @@
 #ifndef CFECHA_H
 #define CFECHA_H
+#include <iostream>
+
+
+
+using namespace std;
 
 
 class cFecha
@@ -34,6 +39,8 @@ public:
     {
         anio = val;
     }
+
+    friend ostream& operator<< (ostream&, cFecha&);
 
 protected:
     int dia;

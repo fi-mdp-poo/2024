@@ -1,6 +1,7 @@
 #ifndef CCLIENTE_H
 #define CCLIENTE_H
 #include "string"
+#include <iostream>
 
 using namespace std;
 
@@ -27,6 +28,8 @@ public:
     {
         cuit = val;
     }
+
+    friend ostream& operator<< (ostream&, cCliente&);
 
 protected:
     string nombre_cliente;

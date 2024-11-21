@@ -2,6 +2,8 @@
 
 cServicio::cServicio(string name_trabajador,int d,int m,int a,int id,int d1,int m1,int a1,string name_cliente,int id_cliente)
 {
+
+
     trabajador.Setnombre(name_trabajador);
     trabajador.Setfecha_ingreso(d,m,a);
     trabajador.Setcodigo(id);

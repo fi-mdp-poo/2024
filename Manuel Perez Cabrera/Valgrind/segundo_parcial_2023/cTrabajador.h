@@ -39,6 +39,8 @@ public:
         codigo_identificacion = val;
     }
 
+    friend ostream& operator<< (ostream&, cTrabajador&);
+
 protected:
     string nombre;
     cFecha fecha_ingreso;

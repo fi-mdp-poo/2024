@@ -42,7 +42,7 @@ public:
     }
 
 
-    friend ostream& operator<< (ostream&, cServicio&);
+    friend ostream& operator<< (ostream&, cServicio&); ///tiene que ir si o si o se rompe
 
     virtual void vImprimir(ostream& os=cout)=0;
     virtual float costoMaterial()=0;

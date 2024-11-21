@@ -1,21 +1,22 @@
 # depslib dependency file v1.0
-1732120130 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.cpp
+1732146642 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.cpp
 	"cServicio.h"
 
-1732120406 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.h
+1732147199 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cservicio.h
 	"cTrabajador.h"
 	"cCliente.h"
 	<iostream>
 
-1732105947 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.cpp
+1732147630 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.cpp
 	"cFecha.h"
 
-1732109156 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.h
+1732146946 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cfecha.h
+	<iostream>
 
-1732108144 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.cpp
+1732149246 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.cpp
 	"cTrabajador.h"
 
-1732116536 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.h
+1732148131 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ctrabajador.h
 	"cFecha.h"
 	<string>
 
@@ -23,13 +24,14 @@
 	<iostream>
 	"cManejadorServicios.h"
 
-1732106411 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.cpp
+1732149095 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.cpp
 	"cCliente.h"
 
-1732109121 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.h
+1732148874 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\ccliente.h
 	"string"
+	<iostream>
 
-1732120808 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cpintura.cpp
+1732149231 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cpintura.cpp
 	"cPintura.h"
 
 1732120406 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cpintura.h
@@ -42,7 +44,7 @@
 	<string>
 	"cServicio.h"
 
-1732120130 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.cpp
+1732147652 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.cpp
 	"cManejadorServicios.h"
 
 1732120130 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.h

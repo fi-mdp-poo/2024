@@ -123,7 +123,7 @@ void cManejadorServicios::ImprimirServicios(ostream& os)
     for(int i = 0 ; i < tam ; i++)
     {
         servicios[i]->vImprimir(os);
-        os << *servicios[i];
+        //os << *servicios[i];
     }
 
 }
