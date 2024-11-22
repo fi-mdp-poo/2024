@@ -45,6 +45,8 @@ void CFigura::SetValores(float v)
 }
 
 
+
+
 ostream& operator<< (ostream& os, CFigura& f)
 {
     os<< "BackColor" <<endl;

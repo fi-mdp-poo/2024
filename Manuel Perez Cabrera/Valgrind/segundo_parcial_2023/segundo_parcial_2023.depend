@@ -20,7 +20,7 @@
 	"cFecha.h"
 	<string>
 
-1732120574 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\main.cpp
+1732230315 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\main.cpp
 	<iostream>
 	"cManejadorServicios.h"
 
@@ -44,10 +44,10 @@
 	<string>
 	"cServicio.h"
 
-1732147652 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.cpp
+1732230315 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.cpp
 	"cManejadorServicios.h"
 
-1732120130 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.h
+1732230025 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\segundo_parcial_2023\cmanejadorservicios.h
 	"cServicio.h"
 	"cPintura.h"
 	"cAlarma.h"

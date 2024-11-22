@@ -17,11 +17,11 @@ class CFigura
         ///no existe void vSetForeColor(int);
         void vSetForeColor(CColor);
         void vSetBackColor(CColor);
-        virtual double dCalcArea() = 0;
+        virtual double dCalcArea() =0;
         void SetArea(double);
         double GetArea();
         friend ostream& operator<< (ostream&, CFigura&);
-        virtual void vImprimir(ostream& os=cout)=0;
+        virtual void vImprimir(ostream& os=cout) =0;
 //        virtual void SetValores(float, float);
         virtual void SetValores(float);
     private:

@@ -7,7 +7,7 @@ int main()
 {
     cManejadorServicios manejador;
 
-    manejador.cargarServicios("servicios");
+    manejador.cargarServicios("servicios.bin");
     manejador.ImprimirServicios();
 
      ///cout << manejador.servicios[3]->Getcliente().Getnombre_cliente() ;

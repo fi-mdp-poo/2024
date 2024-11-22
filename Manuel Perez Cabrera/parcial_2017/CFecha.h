@@ -7,8 +7,8 @@ using namespace std;
 class CFecha
 {
 public:
-    CFecha(int,int,int);
-    CFecha();
+    CFecha(int Day = 0,int Month = 0,int Year = 0);
+
     virtual ~CFecha();
 
     int GetDay()

@@ -6,14 +6,17 @@
 class CMaritimo : public CTransporte
 {
     public:
-        CMaritimo();
-        CMaritimo(string,string,int,int);
+
+        CMaritimo(string Matricula = "0000",string Nombre = "nombre",CColor = CColor(0),int Pasajeros = 0);  ///string matri,string nombr,int col,int pasaj
         virtual ~CMaritimo();
 
         int GetPasajeros() { return Pasajeros; }
         void SetPasajeros(int val) { Pasajeros = val; }
         string GetNombre() { return Nombre; }
         void SetNombre(string val) { Nombre = val; }
+
+        friend ostream& operator << (ostream& os, CMaritimo& t);
+        void imprimir(ostream& os);
 
     protected:
 

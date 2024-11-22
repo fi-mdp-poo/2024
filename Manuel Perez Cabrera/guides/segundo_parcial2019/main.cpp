@@ -9,15 +9,15 @@ int main()
     mf.CargarFiguras();
 
     mf.ImprimirFiguras();
-//
-    cout << "Area total = " << mf.TotalArea() << endl;
-//
+
+   cout << "Area total = " << mf.TotalArea() << endl;
+
     try
     {
         ofstream of("salida.txt");
         if (!of.is_open())
         {
-            throw runtime_error("No se pudo abrir el archivo.");
+           throw runtime_error("No se pudo abrir el archivo.");
         }
 
 
@@ -25,12 +25,12 @@ int main()
         //mf.ImprimirFiguras(); /// testt manu anda bien :)
 
         mf.Ordenar();
-//
+
         mf.ImprimirFiguras(of);
-//
-//        of << "Area total = " << mf.TotalArea() << endl;
-//
-//        of.close();
+
+        of << "Area total = " << mf.TotalArea() << endl;
+
+        of.close();
     }
     catch (const exception& e)
     {

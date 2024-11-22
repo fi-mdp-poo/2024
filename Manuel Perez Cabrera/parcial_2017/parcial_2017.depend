@@ -1,17 +1,18 @@
 # depslib dependency file v1.0
-1732192879 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cfecha.cpp
+1732196202 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cfecha.cpp
 	"CFecha.h"
 
-1732192754 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cfecha.h
+1732196202 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cfecha.h
 	<iostream>
 
-1732194941 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\main.cpp
+1732203748 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\main.cpp
 	<iostream>
 	<map>
 	"CTransporte.h"
 	"persona.h"
 	"CMaritimo.h"
 	"CTerrestre.h"
+	<fstream>
 
 1732192726 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\persona.cpp
 	"persona.h"
@@ -21,21 +22,28 @@
 	"CFecha.h"
 	<iostream>
 
-1732193917 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\src\ctransporte.cpp
+1732203142 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\src\ctransporte.cpp
 	"CTransporte.h"
 
-1732193917 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\include\ctransporte.h
+1732203064 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\include\ctransporte.h
 	<string>
+	"CColor.h"
 
-1732193882 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cmaritimo.cpp
+1732202995 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cmaritimo.cpp
 	"CMaritimo.h"
 
-1732194867 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cmaritimo.h
+1732203064 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cmaritimo.h
 	"CTransporte.h"
 
-1732194674 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cterrestre.cpp
+1732202967 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cterrestre.cpp
 	"CTerrestre.h"
 
-1732194725 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cterrestre.h
+1732203064 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cterrestre.h
 	"CTransporte.h"
+
+1732202946 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\ccolor.cpp
+	"CColor.h"
+
+1732200692 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\ccolor.h
+	<iostream>
 

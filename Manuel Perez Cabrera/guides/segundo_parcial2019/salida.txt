@@ -37,3 +37,4 @@ Componente verde : 0
 Componente azul : 255
 Componente alpha : 255
 
+Area total = 9.49

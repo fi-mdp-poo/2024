@@ -21,10 +21,8 @@ public:
 
     void ImprimirServicios(ostream& os=cout);
 
-protected:
-    vector<cServicio*> servicios;
-
 private:
+    vector<cServicio*> servicios;
 };
 
 #endif // CMANEJADORSERVICIOS_H
