@@ -1,0 +1,26 @@
+Matricula:007XYZ
+Marca:Honda
+Velocidad maxima:87.5
+Cantidad Ruedas:2
+Color:0xe10069(rojo=225,verde=0,azul=105,alpha=0)
+
+
+Matricula:AA769DB
+Marca:Renault
+Velocidad maxima:197.8
+Cantidad Ruedas:4
+Color:0x50ff0ff(rojo=15,verde=240,azul=255,alpha=5)
+
+
+Matricula:AUB734
+Nombre:Titanic
+Cantidad pasajeros:500
+Color:0x50ff0ff(rojo=15,verde=240,azul=255,alpha=5)
+
+
+Matricula:CZX023
+Nombre:Esperanza
+Cantidad pasajeros:5
+Color:0x7000ff(rojo=112,verde=0,azul=255,alpha=0)
+
+

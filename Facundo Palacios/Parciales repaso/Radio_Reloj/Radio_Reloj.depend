@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1732226967 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\src\cradio.cpp
+	"cRadio.h"
+
+1732227047 c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\include\cradio.h
+
+1732227337 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\ctime.cpp
+	"cTime.h"
+
+1732226699 c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\ctime.h
+
+1732226699 c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\include\ctime.h
+
+1732229052 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\src\creloj.cpp
+	"cReloj.h"
+
+1732229052 c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\include\creloj.h
+	<string>
+	<iostream>
+	"cTime.h"
+
+1732228407 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\main.cpp
+	<iostream>
+	"cRadioReloj.h"
+	"cTime.h"
+
+1732227004 c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\include\cradioreloj.h
+	"cRadio.h"
+	"cReloj.h"
+	"cTime.h"
+
+1732227924 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\src\ctime.cpp
+	"cTime.h"
+
+1732227500 source:c:\users\usuario\desktop\poo\parciales repaso\radio_reloj\src\cradioreloj.cpp
+	"cRadioReloj.h"
+
