@@ -40,9 +40,12 @@ int main()
     archivero = new ManejadorArchivos("servicios.bin","lectura", "binario");
 
     int cant = archivero->leer_binario<int>();
+    cout << "la long de char es " << sizeof(char) << "y la de unsigned es" << sizeof(unsigned char) << endl;
     cout << "cantidad de trabajos "<< cant;
     char a = 'a';
-    cant = archivero->leer_binario<unsigned char>();
+    cant = archivero->leer_binario<char>();
+    //cant = archivero->leer_binario<unsigned char>();
+
     cout << hex << "tipo de trabajo "<< cant;
     //cant = archivero->leer_binario<unsigned char>();
 
@@ -86,6 +89,6 @@ int main()
     archivero = new ManejadorArchivos("archivo.txt","lectura", "texto");
     cout << archivero->leer_texto() << endl;
 
-    fstream& afdssaf = sal;
+
     return 0;
 }
