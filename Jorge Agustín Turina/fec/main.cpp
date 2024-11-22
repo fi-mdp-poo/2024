@@ -12,9 +12,10 @@ int main() {
     Fecha alguna_otra(fecha);
     std::cout << alguna_otra << std::endl;
     Fecha a ;
-    a.obtenerFechaActual();
+    Fecha jj;
+    (jj.obtenerFechaActual());
     std::cout << a << std::endl;
-
+    std::cout << jj << "se supone la de hoy "<< std::endl;
     std::cout << "Fecha establecida (intento 1): " << fecha << std::endl;
 
     fecha.setDia(15); // Cambiar el día
