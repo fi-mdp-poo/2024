@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1732282310 source:d:\estrada2p\ejercicio2\archivo.cpp
+	"Archivo.h"
+
+1732282304 source:d:\estrada2p\ejercicio2\gestionpublicaciones.cpp
+	"GestionPublicaciones.h"
+
+1732284436 source:d:\estrada2p\ejercicio2\main.cpp
+	<iostream>
+	<vector>
+	"Publicacion.h"
+	"GestionPublicaciones.h"
+	"Archivo.h"
+
+1732283998 source:d:\estrada2p\ejercicio2\publicacion.cpp
+	"Publicacion.h"
+
+1732284389 d:\estrada2p\ejercicio2\archivo.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<fstream>
+
+1732284186 d:\estrada2p\ejercicio2\gestionpublicaciones.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<fstream>
+
+1732283977 d:\estrada2p\ejercicio2\publicacion.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<fstream>
+
