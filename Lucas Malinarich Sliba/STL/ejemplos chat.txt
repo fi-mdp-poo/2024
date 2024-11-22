@@ -1,0 +1,56 @@
+#include <fstream>
+#include <iostream>
+
+int main() {
+    std::fstream archivo("mi_archivo.txt", std::ios::in | std::ios::out);
+    if (!archivo) {
+        std::cerr << "No se pudo abrir el archivo.\n";
+        return 1;
+    }
+
+    // Escribir en el archivo
+    archivo << "Hola, mundo!\n";
+
+    // Leer desde el archivo (puedes mover el puntero con seekg y seekp si es necesario)
+    archivo.seekg(0); // Volver al inicio para leer
+    std::string linea;
+    while (std::getline(archivo, linea)) {
+        std::cout << linea << '\n';
+    }
+
+    archivo.close();
+    return 0;
+}
+
+#include <cstdio>
+#include <iostream>
+
+int main() {
+    const char* nombreArchivo = "archivo_a_eliminar.txt";
+
+    // Intentamos eliminar el archivo
+    if (remove(nombreArchivo) == 0) {
+        std::cout << "El archivo se eliminó correctamente.\n";
+    } else {
+        std::perror("Error al eliminar el archivo");
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+#include <filesystem>
+
+int main() {
+    const std::string archivo = "archivo_a_eliminar.txt";
+
+    try {
+        std::filesystem::remove(archivo);
+        std::cout << "El archivo se eliminó correctamente.\n";
+    } catch (const std::filesystem::filesystem_error& e) {
+        std::cerr << "Error al eliminar el archivo: " << e.what() << "\n";
+    }
+
+    return 0;
+}
