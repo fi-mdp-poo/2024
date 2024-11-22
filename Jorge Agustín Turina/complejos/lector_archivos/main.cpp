@@ -45,9 +45,9 @@ int main() {
 
 
     char caracter;
-    /**while (archivoLectura.get(caracter) && caracter != 'j') {
+    while (archivoLectura.get(caracter) && caracter != 'j') {
         cout << caracter;
-    }*/
+    }
     string test;
     getline(archivoLectura,test, 's'); //lee hasta s, donde lo encuentra corta NO SE INCLUYE EN el string
     archivoLectura.get(caracter);
