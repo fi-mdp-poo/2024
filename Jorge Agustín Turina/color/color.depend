@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1732240508 source:c:\users\jorge\documents\github\2024\jorge agustín turina\color\main.cpp
+	"ManejadorColor.h"
+	"ManejadorArchivos.h"
+
+1732216443 c:\users\jorge\documents\github\2024\jorge agustín turina\color\include\manejadorcolor.h
+	"CColor.h"
+
+1732213519 c:\users\jorge\documents\github\2024\jorge agustín turina\color\ccolor.h
+	<iostream>
+	<iomanip>
+	<cstdint>
+	<string>
+	<sstream>
+
+1732216484 source:c:\users\jorge\documents\github\2024\jorge agustín turina\color\src\manejadorcolor.cpp
+	"ManejadorColor.h"
+
+1732229262 source:c:\users\jorge\documents\github\2024\jorge agustín turina\color\ccolor.cpp
+	"CColor.h"
+
+1732237189 source:c:\users\jorge\documents\github\2024\jorge agustín turina\color\manejadorarchivos.cpp
+	"ManejadorArchivos.h"
+
+1732237211 c:\users\jorge\documents\github\2024\jorge agustín turina\color\manejadorarchivos.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<stdexcept>
+

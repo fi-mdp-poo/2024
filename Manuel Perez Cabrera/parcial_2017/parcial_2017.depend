@@ -39,3 +39,37 @@
 1732194725 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\parcial_2017\cterrestre.h
 	"CTransporte.h"
 
+1732195031 source:c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cfecha.cpp
+	"CFecha.h"
+
+1732195031 c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cfecha.h
+	<iostream>
+
+1732195031 source:c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\persona.cpp
+	"persona.h"
+
+1732195031 c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\persona.h
+	<string>
+	"CFecha.h"
+	<iostream>
+
+1732196802 source:c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\ctransporte.cpp
+	"CTransporte.h"
+
+1732196851 c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\ctransporte.h
+	<string>
+
+1732195031 source:c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cterrestre.cpp
+	"CTerrestre.h"
+
+1732195347 c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cterrestre.h
+	"CTransporte.h"
+	<string>
+
+1732195537 source:c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cmaritimo.cpp
+	"CMaritimo.h"
+
+1732195330 c:\users\jorge\documents\github\2024\manuel perez cabrera\parcial_2017\cmaritimo.h
+	"CTransporte.h"
+	<string>
+

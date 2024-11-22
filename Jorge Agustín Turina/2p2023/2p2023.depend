@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1732155980 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\manejadorservicios.cpp
+	"ManejadorServicios.h"
+
+1732155998 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\manejadorservicios.h
+	<string>
+	<fstream>
+	<iostream>
+	"TrabajoPintura.h"
+
+1732149498 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\src\servicio.cpp
+	"Servicio.h"
+
+1732149548 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\include\servicio.h
+	<string>
+	"Fecha.h"
+
+1732145759 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\fecha.h
+	<iostream>
+	<stdexcept>
+	<iomanip>
+	<ctime>
+
+1732156014 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\main.cpp
+	<iostream>
+	"ManejadorServicios.h"
+
+1732155010 source:c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\src\trabajopintura.cpp
+	"TrabajoPintura.h"
+
+1732155057 c:\users\jorge\documents\github\2024\jorge agustín turina\2p2023\include\trabajopintura.h
+	"Servicio.h"
+

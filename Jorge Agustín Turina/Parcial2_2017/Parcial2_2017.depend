@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1732193671 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\main.cpp
+	<iostream>
+	<map>
+	"CTransporte.h"
+	"CMaritimo.h"
+	"persona.h"
+
+1732192858 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\src\cfecha.cpp
+	"CFecha.h"
+
+1732192838 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\include\cfecha.h
+	<iostream>
+
+1732192098 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\persona.cpp
+	"persona.h"
+
+1732192838 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\persona.h
+	<iostream>
+	<string>
+	"CFecha.h"
+
+1732193861 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\ctransporte.cpp
+	"CTransporte.h"
+
+1732193861 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\ctransporte.h
+	<string>
+	<iostream>
+
+1732193861 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\cmaritimo.cpp
+	"CMaritimo.h"
+
+1732193717 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\cmaritimo.h
+	"CTransporte.h"
+
+1732194571 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\src\cterrestre.cpp
+	"CTerrestre.h"
+
+1732194719 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2017\include\cterrestre.h
+	"CTransporte.h"
+
+1732193861 source:c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\cmaritimo.cpp
+	"CMaritimo.h"
+
+1732193717 c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\cmaritimo.h
+	"CTransporte.h"
+
+1732193861 c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\ctransporte.h
+	<string>
+	<iostream>
+
+1732193861 source:c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\ctransporte.cpp
+	"CTransporte.h"
+
+1732192098 source:c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\persona.cpp
+	"persona.h"
+
+1732192838 c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\persona.h
+	<iostream>
+	<string>
+	"CFecha.h"
+
+1732192858 source:c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\src\cfecha.cpp
+	"CFecha.h"
+
+1732194571 source:c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\src\cterrestre.cpp
+	"CTerrestre.h"
+
+1732192838 c:\users\jorge\documents\github\2024\jorge agustín turina\parcial2_2017\include\cfecha.h
+	<iostream>
+

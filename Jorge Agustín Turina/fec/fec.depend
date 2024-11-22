@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1732148972 source:c:\users\jorge\documents\github\2024\jorge agustín turina\fec\main.cpp
+	"Fecha.h"
+
+1732145759 c:\users\jorge\documents\github\2024\jorge agustín turina\fec\fecha.h
+	<iostream>
+	<stdexcept>
+	<iomanip>
+	<ctime>
+

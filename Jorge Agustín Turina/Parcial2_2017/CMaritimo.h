@@ -1,15 +1,15 @@
 #ifndef CMARITIMO_H
 #define CMARITIMO_H
+
 #include "CTransporte.h"
 
-#include <string>
 using namespace std;
 
 class CMaritimo : public CTransporte
 {
     public:
         CMaritimo();
-        CMaritimo(string,string,int,int);
+        CMaritimo(string, string, int, int);
         virtual ~CMaritimo();
 
         int GetPasajeros() { return Pasajeros; }

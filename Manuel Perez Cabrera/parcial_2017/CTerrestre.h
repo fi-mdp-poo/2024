@@ -2,6 +2,8 @@
 #define CTERRESTRE_H
 #include "CTransporte.h"
 
+#include <string>
+using namespace std;
 class CTerrestre : public CTransporte
 {
     public:
