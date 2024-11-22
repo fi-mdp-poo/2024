@@ -14,7 +14,7 @@ cManejadorServicios::~cManejadorServicios()
 void cManejadorServicios::cargarServicios(string fn)
 {
     ifstream ptr_fn;
-    ptr_fn.open("servicios.bin", ios::binary);
+    ptr_fn.open(fn, ios::binary);
 
     if (!ptr_fn.is_open())
     {

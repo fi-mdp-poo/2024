@@ -2,7 +2,7 @@
 
 CCirculo::CCirculo()
 {
-    //ctor
+    vSetRadio(44);
 }
 
 CCirculo::~CCirculo()

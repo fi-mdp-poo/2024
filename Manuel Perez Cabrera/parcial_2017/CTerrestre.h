@@ -17,6 +17,9 @@ class CTerrestre : public CTransporte
         int GetRuedas() { return Ruedas; }
         void SetRuedas(int val) { Ruedas = val; }
 
+        friend ostream& operator << (ostream&, CTerrestre&);
+        void imprimir(ostream& os);
+
     protected:
 
     private:

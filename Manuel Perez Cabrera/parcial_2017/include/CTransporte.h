@@ -1,13 +1,14 @@
 #ifndef CTRANSPORTE_H
 #define CTRANSPORTE_H
 #include <string>
+#include "CColor.h"
 
 using namespace std;
 
 class CTransporte
 {
 public:
-    CTransporte(string Matricula = "Default", int Color = 0);
+    CTransporte(string Matricula = "Default", CColor = CColor(0));
    // CTransporte();
     virtual ~CTransporte();
 
@@ -19,20 +20,23 @@ public:
     {
         Matricula = val;
     }
-    int GetColor()
+    CColor& GetColor()
     {
         return Color;
     }
-    void SetColor(int val)
+    void SetColor(CColor val)
     {
         Color = val;
     }
+
+    virtual void imprimir(ostream& os);
+    friend ostream& operator << (ostream&, CTransporte&);
 
 protected:
 
 private:
     string Matricula;
-    int Color;
+    CColor Color;
 };
 
 #endif // CTRANSPORTE_H

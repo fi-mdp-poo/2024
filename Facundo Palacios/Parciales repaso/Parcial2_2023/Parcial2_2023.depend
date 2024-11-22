@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1732235894 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\main.cpp
+	<iostream>
+	"C_ManejadordeServicios.h"
+
+1732149093 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_fecha.cpp
+	"C_Fecha.h"
+
+1732235565 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_fecha.h
+	<iostream>
+
+1732149093 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_cliente.cpp
+	"C_Cliente.h"
+
+1732148077 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_cliente.h
+	<iostream>
+	<string>
+
+1732147141 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_servicio.cpp
+	"C_Servicio.h"
+
+1732147141 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_servicio.h
+	<iostream>
+	"C_Trabajador.h"
+	"C_Cliente.h"
+	"C_Fecha.h"
+
+1732148116 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_trabajador.h
+	"C_Fecha.h"
+	<iostream>
+	<string>
+
+1732149093 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_trabajador.cpp
+	"C_Trabajador.h"
+
+1732152425 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_trabajopintura.cpp
+	"C_TrabajoPintura.h"
+
+1732146920 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_trabajopintura.h
+	"C_Servicio.h"
+
+1732152478 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_revisionalarma.cpp
+	"C_RevisionAlarma.h"
+
+1732146920 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_revisionalarma.h
+	"C_Servicio.h"
+
+1732236052 source:c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\src\c_manejadordeservicios.cpp
+	"C_ManejadordeServicios.h"
+	<algorithm>
+
+1732235415 c:\users\usuario\desktop\poo\parciales repaso\parcial2_2023\include\c_manejadordeservicios.h
+	<vector>
+	<string>
+	<iostream>
+	<fstream>
+	"C_Servicio.h"
+	"C_TrabajoPintura.h"
+	"C_RevisionAlarma.h"
+

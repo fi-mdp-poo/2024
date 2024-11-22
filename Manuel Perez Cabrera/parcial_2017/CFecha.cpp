@@ -4,10 +4,7 @@ CFecha::CFecha(int d,int m,int a)
 {
     //ctor
 }
-CFecha::CFecha()
-{
-    //ctor
-}
+
 
 CFecha::~CFecha()
 {

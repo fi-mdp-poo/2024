@@ -23,3 +23,4 @@ ostream& operator<<(ostream& os, const CColor& color)
 
     return os;
 }
+

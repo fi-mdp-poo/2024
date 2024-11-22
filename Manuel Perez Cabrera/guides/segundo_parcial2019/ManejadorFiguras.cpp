@@ -80,7 +80,7 @@ CFigura* ManejadorFiguras::Get(uint8_t n)
 void ManejadorFiguras::Ordenar()
 {
     // Ordena las figuras según su área en orden ascendente
-    std::sort(Figuras.begin(), Figuras.end(),[](CFigura* a, CFigura* b)
+    sort(Figuras.begin(), Figuras.end(),[](CFigura* a, CFigura* b)
     {
         return a->GetArea() < b->GetArea(); // Comparación basada en el área
     }

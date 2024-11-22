@@ -1,0 +1,24 @@
+Trabajo de pintura:
+Trabajador:Pintor1,  25,1,2010, 100
+Fecha de inicio: 10,1,2023
+Cliente:Cliente1, 200
+Superficie:60
+Precio pintura:5
+
+Trabajo de pintura:
+Trabajador:Pintor2,  25,3,2022, 150
+Fecha de inicio: 1,2,2023
+Cliente:Cliente4, 230
+Superficie:30
+Precio pintura:4.5
+
+Trabajado de Revision de Alarma:
+Fecha de inicio: 1,3,2023
+Cliente:Cliente3, 210
+Cantidad de Alarmas:10
+
+Trabajado de Revision de Alarma:
+Fecha de inicio: 15,4,2023
+Cliente:Cliente2, 220
+Cantidad de Alarmas:5
+
