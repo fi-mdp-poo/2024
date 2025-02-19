@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-72514d4afc485140b791.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Software_laser",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Software_laser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Software_laser-Debug-19b2e77f075395fa5179.json",
+					"name" : "Software_laser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Software_laser_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Software_laser_autogen-Debug-41e8f8728937ea7e2597.json",
+					"name" : "Software_laser_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Software_laser_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Software_laser_autogen_timestamp_deps-Debug-a7361b5f8874406a45b8.json",
+					"name" : "Software_laser_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/manue/OneDrive/Documentos/Software_laser/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/manue/OneDrive/Documentos/Software_laser"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -1,0 +1,3 @@
+Libro,C++ Primer,Lippman,2013,Educación
+Revista,National Geographic,Varios,2021,100
+Periodico,El País,Editorial,2024,2024-11-27

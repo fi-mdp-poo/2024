@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>321</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Stock</string>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="1">
+      <widget class="QTableWidget" name="tableWidget">
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cantidad</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Precio</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>521</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Pedidos</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidgetPedidos">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>501</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Material</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cantidad Material</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Costo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ganancia</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>491</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>*Si el pedido se encuentra resaltado es un pedido especial al que se le aplica un descuento</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionRegister"/>
+    <addaction name="actionLogOut"/>
+   </widget>
+   <widget class="QMenu" name="menuStock">
+    <property name="title">
+     <string>Stock</string>
+    </property>
+    <addaction name="actionAgregar_Producto"/>
+    <addaction name="actionEliminar_Producto"/>
+   </widget>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="actionGestionar_Clientes"/>
+   </widget>
+   <widget class="QMenu" name="menuPedidos">
+    <property name="title">
+     <string>Pedidos</string>
+    </property>
+    <addaction name="actionAgregar_Pedido"/>
+    <addaction name="actionEliminar_Pedido"/>
+   </widget>
+   <addaction name="menuSettings"/>
+   <addaction name="menuStock"/>
+   <addaction name="menuClientes"/>
+   <addaction name="menuPedidos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLogOut"/>
+   <addaction name="actionRegister"/>
+   <addaction name="actionAgregar_Producto"/>
+   <addaction name="actionEliminar_Producto"/>
+   <addaction name="actionGestionar_Clientes"/>
+   <addaction name="separator"/>
+   <addaction name="actionAgregar_Pedido"/>
+   <addaction name="actionEliminar_Pedido"/>
+  </widget>
+  <action name="actionRegister">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ContactNew"/>
+   </property>
+   <property name="text">
+    <string>Register</string>
+   </property>
+  </action>
+  <action name="actionLogOut">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SystemLogOut"/>
+   </property>
+   <property name="text">
+    <string>LogOut</string>
+   </property>
+  </action>
+  <action name="actionAgregar_Producto">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+   </property>
+   <property name="text">
+    <string>Agregar Producto</string>
+   </property>
+  </action>
+  <action name="actionEliminar_Producto">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+   </property>
+   <property name="text">
+    <string>Eliminar Producto</string>
+   </property>
+  </action>
+  <action name="actionGestionar_Clientes">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SystemSearch"/>
+   </property>
+   <property name="text">
+    <string>Clientes</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAgregar_Pedido">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+   </property>
+   <property name="text">
+    <string>Agregar Pedido</string>
+   </property>
+  </action>
+  <action name="actionEliminar_Pedido">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+   </property>
+   <property name="text">
+    <string>Eliminar Pedido</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

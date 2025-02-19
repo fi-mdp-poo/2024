@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1732718698 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\main.cpp
+	<iostream>
+	<memory>
+	"GestorPublicaciones.h"
+	"Libro.h"
+	"Revista.h"
+	"Periodico.h"
+
+1732716595 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\publicacion.cpp
+	"Publicacion.h"
+	<iostream>
+
+1732716574 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\publicacion.h
+	<string>
+
+1732720221 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\libro.cpp
+	"Libro.h"
+	<iostream>
+
+1732719375 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\libro.h
+	<string>
+	"Publicacion.h"
+
+1732718186 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\periodico.cpp
+	"Periodico.h"
+	<iostream>
+
+1732716861 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\periodico.h
+	"Publicacion.h"
+
+1732718186 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\revista.cpp
+	"Revista.h"
+	<iostream>
+
+1732716862 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\revista.h
+	"Publicacion.h"
+
+1732720733 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\gestorpublicaciones.cpp
+	"GestorPublicaciones.h"
+	<fstream>
+
+1732720627 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\2do_parcialchatgptsolo\gestorpublicaciones.h
+	<iostream>
+	<vector>
+	<stdexcept>
+	"Publicacion.h"
+	"Libro.h"
+	"Revista.h"
+

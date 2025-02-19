@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1732724134 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\libro.cpp
+	"Libro.h"
+	<iostream>
+
+1732724134 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\libro.h
+	"Publicacion.h"
+
+1732723110 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\publicacion.h
+	<string>
+
+1732723431 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\main.cpp
+	"Libro.h"
+	"Revista.h"
+	"Periodico.h"
+	"Persistencia.h"
+	<iostream>
+	<vector>
+
+1732723110 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\publicacion.cpp
+	"Publicacion.h"
+	<iostream>
+
+1732723268 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\periodico.cpp
+	"Periodico.h"
+	<iostream>
+
+1732723268 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\periodico.h
+	"Publicacion.h"
+	<string>
+
+1732723518 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\persistencia.cpp
+	"Persistencia.h"
+	"Libro.h"
+	"Revista.h"
+	"Periodico.h"
+	<fstream>
+	<sstream>
+
+1732723497 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\persistencia.h
+	"Publicacion.h"
+	<vector>
+	<memory>
+	<string>
+
+1732723268 c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\revista.h
+	"Publicacion.h"
+
+1732723268 source:c:\users\manue\documents\workspace\poo\2024\manuel perez cabrera\valgrind\chatgpt_v2\revista.cpp
+	"Revista.h"
+	<iostream>
+
