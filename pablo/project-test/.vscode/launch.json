@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch with Make",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/program.exe", // que coincida con TARGET_NAME
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb32.exe", 
+            "setupCommands": [
+                {
+                    "description": "Enable pretty printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // Ejecuta la tarea 'make all (Build)' antes de depurar
+            "preLaunchTask": "make all (Build)"
+        }
+    ]
+}
