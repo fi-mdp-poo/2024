@@ -10,7 +10,9 @@ int main(){
 
     a = 1000;
 
+    cout << "variable a = ";
     cout << a << endl;
+    
 
     return 0;
 }
